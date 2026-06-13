@@ -1,0 +1,162 @@
+INFO - 2024-07-28 02:22:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:22:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:22:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:23:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:29:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:35:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:35:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:36:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-28 02:36:49 --> ErrorException: pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;rr_expediente_pkey&quot;
+DETAIL:  Key (num_contrato)=(342332) already exists. in /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/rocio_romero/app/Models/DependenciaModel.php(145): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/rocio_romero/app/Controllers/dependencia.php(159): App\Models\DependenciaModel->agregarexpediente()
+#6 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Dependencia->add_expediente()
+#7 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/rocio_romero/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-28 02:36:49 --> pg_query(): Query failed: ERROR:  duplicate key value violates unique constraint &quot;rr_expediente_pkey&quot;
+DETAIL:  Key (num_contrato)=(342332) already exists.
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/DependenciaModel.php(145): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/dependencia.php(159): App\Models\DependenciaModel->agregarexpediente()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Dependencia->add_expediente()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-28 02:36:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:37:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:38:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 02:50:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-28 02:50:35 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: numeric = text
+LINE 1: ...p.nombres from rr_propietario p where p.documento = e.client...
+                                                             ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/rocio_romero/app/Models/DependenciaModel.php(170): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/rocio_romero/app/Controllers/dependencia.php(107): App\Models\DependenciaModel->expedientes()
+#6 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Dependencia->expediente()
+#7 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/rocio_romero/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-28 02:50:35 --> pg_query(): Query failed: ERROR:  operator does not exist: numeric = text
+LINE 1: ...p.nombres from rr_propietario p where p.documento = e.client...
+                                                             ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/DependenciaModel.php(170): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/dependencia.php(107): App\Models\DependenciaModel->expedientes()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Dependencia->expediente()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-28 03:17:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:28:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:30:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:31:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:33:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:34:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:34:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:47:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:48:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:48:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:48:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:51:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:51:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:52:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:54:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:55:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 03:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:00:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:01:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:01:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:02:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:08:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:08:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:09:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 04:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-07-28 04:09:17 --> Undefined variable $contrato
+in APPPATH/Models/DependenciaModel.php on line 185.
+ 1 APPPATH/Models/DependenciaModel.php(185): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/dependencia.php(113): App\Models\DependenciaModel->actualizarexpediente()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Dependencia->expediente()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-28 04:09:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-07-28 04:09:35 --> ErrorException: pg_query(): Query failed: ERROR:  syntax error at or near &quot;2024&quot;
+LINE 1: ...t codigo='342332',fecha_inicio='null',fecha_fin=''2024-08-31...
+                                                             ^ in /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/rocio_romero/app/Models/DependenciaModel.php(185): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/rocio_romero/app/Controllers/dependencia.php(113): App\Models\DependenciaModel->actualizarexpediente()
+#6 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Dependencia->expediente()
+#7 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/rocio_romero/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-07-28 04:09:36 --> pg_query(): Query failed: ERROR:  syntax error at or near &quot;2024&quot;
+LINE 1: ...t codigo='342332',fecha_inicio='null',fecha_fin=''2024-08-31...
+                                                             ^
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/DependenciaModel.php(185): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/dependencia.php(113): App\Models\DependenciaModel->actualizarexpediente()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Dependencia->expediente()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-07-28 04:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:24:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:24:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:24:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:25:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:27:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:28:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:28:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:31:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-07-28 22:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

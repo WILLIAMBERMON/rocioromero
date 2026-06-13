@@ -1,0 +1,659 @@
+CRITICAL - 2023-09-08 14:06:47 --> Attempt to assign property "template" on null
+in APPPATH/Controllers/index.php on line 8.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(312): include_once()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 3 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 4 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 5 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 6 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 14:08:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:08:17 --> Attempt to assign property "template" on null
+in APPPATH/Controllers/index.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\Index->initController()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 14:08:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:08:29 --> Undefined variable $_js
+in APPPATH/Entities/Template.php on line 40.
+ 1 APPPATH/Entities/Template.php(40): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(22): App\Entities\Template->add_js()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 14:09:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:09:29 --> Indirect modification of overloaded property App\Entities\Template::$data has no effect
+in APPPATH/Entities/Template.php on line 41.
+ 1 APPPATH/Entities/Template.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 14:10:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:10:43 --> Indirect modification of overloaded property App\Entities\Template::$data has no effect
+in APPPATH/Entities/Template.php on line 41.
+ 1 APPPATH/Entities/Template.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 14:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:13:50 --> Trying to access array offset on value of type null
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(22): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 14:14:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:14:10 --> Indirect modification of overloaded property App\Entities\Template::$data has no effect
+in APPPATH/Entities/Template.php on line 41.
+ 1 APPPATH/Entities/Template.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 14:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:14:12 --> Indirect modification of overloaded property App\Entities\Template::$data has no effect
+in APPPATH/Entities/Template.php on line 41.
+ 1 APPPATH/Entities/Template.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 14:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:59:10 --> Indirect modification of overloaded property App\Entities\Template::$data has no effect
+in APPPATH/Entities/Template.php on line 41.
+ 1 APPPATH/Entities/Template.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 14:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 14:59:38 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 41.
+ 1 APPPATH/Entities/Template.php(41): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:00:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:00:26 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 42.
+ 1 APPPATH/Entities/Template.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:00:37 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 44.
+ 1 APPPATH/Entities/Template.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:03:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:03:34 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 43.
+ 1 APPPATH/Entities/Template.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:03:40 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 43.
+ 1 APPPATH/Entities/Template.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:03:52 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 43.
+ 1 APPPATH/Entities/Template.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:03:59 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 43.
+ 1 APPPATH/Entities/Template.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:04:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:04:51 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 36.
+ 1 APPPATH/Entities/Template.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:13:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:15:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:15:23 --> Undefined property: App\Controllers\Template::$_js
+in APPPATH/Controllers/Template.php on line 62.
+ 1 APPPATH/Controllers/Template.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(22): App\Controllers\Template->add_js()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:16:12 --> Undefined property: App\Controllers\Template::$_js
+in APPPATH/Controllers/Template.php on line 62.
+ 1 APPPATH/Controllers/Template.php(62): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(22): App\Controllers\Template->add_js()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:17:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:17:33 --> Undefined property: App\Controllers\Template::$_js
+in APPPATH/Controllers/Template.php on line 67.
+ 1 APPPATH/Controllers/Template.php(67): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(22): App\Controllers\Template->add_js()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:19:38 --> Undefined property: App\Controllers\Template::$_js
+in APPPATH/Controllers/Template.php on line 63.
+ 1 APPPATH/Controllers/Template.php(63): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(22): App\Controllers\Template->add_js()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:22:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:22:44 --> Class "App\Controllers\Template" not found
+in APPPATH/Controllers/index.php on line 16.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\Index->initController()
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:23:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:23:29 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 36.
+ 1 APPPATH/Entities/Template.php(36): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:24:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:24:14 --> Indirect modification of overloaded property App\Entities\Template::$dataw has no effect
+in APPPATH/Entities/Template.php on line 37.
+ 1 APPPATH/Entities/Template.php(37): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:27:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:27:35 --> Undefined variable $_js
+in APPPATH/Entities/Template.php on line 48.
+ 1 APPPATH/Entities/Template.php(48): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/index.php(22): App\Entities\Template->add_js()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:27:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:27:46 --> array_push(): Argument #1 ($array) must be of type array, null given
+in APPPATH/Entities/Template.php on line 37.
+ 1 APPPATH/Entities/Template.php(37): array_push()
+ 2 APPPATH/Controllers/index.php(24): App\Entities\Template->add_data()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:28:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:28:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:28:16 --> Undefined variable $data
+in APPPATH/views/index/home.php on line 1.
+ 1 APPPATH/views/index/home.php(1): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(24): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:28:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:28:59 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(24): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:29:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:34:28 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:35:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:35:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:35:33 --> Array to string conversion
+in APPPATH/Views/template/template.php on line 16.
+ 1 APPPATH/Views/template/template.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include()
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:41:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:41:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:42:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:44:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:44:24 --> Array to string conversion
+in APPPATH/Views/template/template.php on line 16.
+ 1 APPPATH/Views/template/template.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include()
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:44:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:44:27 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:44:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:44:29 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:44:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:44:44 --> Array to string conversion
+in APPPATH/Views/template/template.php on line 16.
+ 1 APPPATH/Views/template/template.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include()
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:44:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:45:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:45:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:46:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:46:00 --> Array to string conversion
+in APPPATH/Views/template/template.php on line 16.
+ 1 APPPATH/Views/template/template.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include()
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:46:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:46:02 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:46:03 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:46:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:46:05 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:46:35 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:46:36 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:46:37 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:46:38 --> Undefined variable $nombre
+in APPPATH/views/index/home.php on line 5.
+ 1 APPPATH/views/index/home.php(5): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:46:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:47:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:47:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 15:47:49 --> Array to string conversion
+in APPPATH/Views/template/template.php on line 16.
+ 1 APPPATH/Views/template/template.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include()
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(27): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 15:47:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:48:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 15:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 16:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 16:00:22 --> Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/index.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 16:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 16:00:29 --> Class "App\Controllers\UserModel" not found
+in APPPATH/Controllers/index.php on line 21.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 16:01:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 16:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 16:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 16:08:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-08 16:08:27 --> Attempt to read property "N" on array
+in APPPATH/views/index/home.php on line 43.
+ 1 APPPATH/views/index/home.php(43): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(16): include('/var/www/html/ci4-admin-lte/app/views/index/home.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(26): view()
+ 7 APPPATH/Controllers/index.php(33): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-08 16:09:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 16:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 16:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:43:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:43:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:54:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:55:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:55:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 19:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:02:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:06:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:06:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:07:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:07:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:07:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:07:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:08:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:09:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:09:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:10:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:23:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:29:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:30:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:30:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:30:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:31:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:35:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:36:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:39:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:41:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:41:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:41:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:41:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:43:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:46:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 20:57:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:15:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:15:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:16:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:26:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:27:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:27:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:27:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:29:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:30:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:30:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:31:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:32:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:32:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:36:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:50:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:53:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:53:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:53:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:53:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:53:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:58:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 21:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:00:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:01:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:02:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-08 22:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

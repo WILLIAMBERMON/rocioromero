@@ -1,0 +1,134 @@
+CRITICAL - 2023-11-16 13:50:31 --> syntax error, unexpected token "<<"
+in APPPATH/Controllers/index.php on line 18.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 13:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:52:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-16 13:52:11 --> Trying to access array offset on value of type null
+in APPPATH/Controllers/radicados.php on line 82.
+ 1 APPPATH/Controllers/radicados.php(82): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->radicados_dependencia()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 13:52:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 13:54:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 14:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-16 14:40:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 14:40:15 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request. in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(113): App\Models\IndexModel->usuario()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->login()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 14:40:15 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(113): App\Models\IndexModel->usuario()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 14:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 14:40:31 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request. in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(113): App\Models\IndexModel->usuario()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->login()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 14:40:31 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(113): App\Models\IndexModel->usuario()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 16:31:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 16:31:21 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request. in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(113): App\Models\IndexModel->usuario()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->login()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 16:31:21 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(113): App\Models\IndexModel->usuario()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-16 16:31:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-11-16 16:31:23 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request. in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(113): App\Models\IndexModel->usuario()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->login()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-11-16 16:31:23 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(113): App\Models\IndexModel->usuario()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()

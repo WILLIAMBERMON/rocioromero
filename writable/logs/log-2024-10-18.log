@@ -1,0 +1,170 @@
+INFO - 2024-10-18 13:13:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-10-18 13:13:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Dependencia::$template is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:13:53 --> [DEPRECATED] Creation of dynamic property App\Controllers\Dependencia::$ldap is deprecated in APPPATH/Controllers/BaseController.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:13:54 --> [DEPRECATED] Creation of dynamic property App\Controllers\Dependencia::$email is deprecated in APPPATH/Controllers/BaseController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-10-18 13:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-10-18 13:13:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$template is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:13:57 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$ldap is deprecated in APPPATH/Controllers/BaseController.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:13:58 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$email is deprecated in APPPATH/Controllers/BaseController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-10-18 13:16:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-10-18 13:16:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$template is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:16:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$ldap is deprecated in APPPATH/Controllers/BaseController.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:16:31 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$email is deprecated in APPPATH/Controllers/BaseController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:16:31 --> [DEPRECATED] Creation of dynamic property App\Models\IndexModel::$dbo is deprecated in SYSTEMPATH/Model.php on line 159.
+ 1 APPPATH/Controllers/index.php(112): CodeIgniter\Model->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->login()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-18 13:16:33 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.251&quot;, port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/rocio_romero/app/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/rocio_romero/app/Controllers/index.php(113): App\Models\IndexModel->usuario()
+#6 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->login()
+#7 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/rocio_romero/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-10-18 13:16:34 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.251&quot;, port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(113): App\Models\IndexModel->usuario()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-10-18 13:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-10-18 13:45:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$template is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:45:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$ldap is deprecated in APPPATH/Controllers/BaseController.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:45:10 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$email is deprecated in APPPATH/Controllers/BaseController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 13:45:11 --> [DEPRECATED] Creation of dynamic property App\Models\IndexModel::$dbo is deprecated in SYSTEMPATH/Model.php on line 159.
+ 1 APPPATH/Controllers/index.php(112): CodeIgniter\Model->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->login()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-10-18 13:45:13 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.251&quot;, port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/rocio_romero/app/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/rocio_romero/app/Controllers/index.php(113): App\Models\IndexModel->usuario()
+#6 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->login()
+#7 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/rocio_romero/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/rocio_romero/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-10-18 13:45:13 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.251&quot;, port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(55): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(113): App\Models\IndexModel->usuario()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->login()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-10-18 15:46:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-10-18 15:46:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$template is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 15:46:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$ldap is deprecated in APPPATH/Controllers/BaseController.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 15:46:25 --> [DEPRECATED] Creation of dynamic property App\Controllers\Index::$email is deprecated in APPPATH/Controllers/BaseController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 15:46:26 --> [DEPRECATED] Creation of dynamic property App\Models\IndexModel::$dbo is deprecated in SYSTEMPATH/Model.php on line 159.
+ 1 APPPATH/Controllers/index.php(112): CodeIgniter\Model->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->login()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-10-18 15:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-10-18 15:46:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Dependencia::$template is deprecated in APPPATH/Controllers/BaseController.php on line 56.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 15:46:28 --> [DEPRECATED] Creation of dynamic property App\Controllers\Dependencia::$ldap is deprecated in APPPATH/Controllers/BaseController.php on line 58.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 15:46:29 --> [DEPRECATED] Creation of dynamic property App\Controllers\Dependencia::$email is deprecated in APPPATH/Controllers/BaseController.php on line 59.
+ 1 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController(Object(CodeIgniter\HTTP\IncomingRequest), Object(CodeIgniter\HTTP\Response), Object(CodeIgniter\Log\Logger))
+ 2 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-10-18 15:46:29 --> [DEPRECATED] Creation of dynamic property App\Models\DependenciaModel::$dbo is deprecated in SYSTEMPATH/Model.php on line 159.
+ 1 APPPATH/Controllers/dependencia.php(18): CodeIgniter\Model->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Dependencia->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dependencia))
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,181 @@
+INFO - 2023-10-26 13:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-26 13:45:43 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/index.php on line 136.
+ 1 APPPATH/views/radicados/index.php(136): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(23): App\Entities\Template->renderview('radicados/index', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-26 13:45:43 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/index.php on line 136.
+ 1 APPPATH/views/radicados/index.php(136): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(23): App\Entities\Template->renderview('radicados/index', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-26 13:45:43 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/index.php on line 136.
+ 1 APPPATH/views/radicados/index.php(136): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(23): App\Entities\Template->renderview('radicados/index', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-26 13:45:43 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/index.php on line 136.
+ 1 APPPATH/views/radicados/index.php(136): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(23): App\Entities\Template->renderview('radicados/index', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-26 13:45:43 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/index.php on line 136.
+ 1 APPPATH/views/radicados/index.php(136): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(23): App\Entities\Template->renderview('radicados/index', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-26 13:45:43 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/index.php on line 136.
+ 1 APPPATH/views/radicados/index.php(136): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(23): App\Entities\Template->renderview('radicados/index', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-26 13:45:43 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/index.php on line 136.
+ 1 APPPATH/views/radicados/index.php(136): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(23): App\Entities\Template->renderview('radicados/index', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-10-26 13:45:43 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/index.php on line 136.
+ 1 APPPATH/views/radicados/index.php(136): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(23): App\Entities\Template->renderview('radicados/index', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 13:56:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 13:57:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 13:57:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 13:57:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 13:57:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 14:58:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:08:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:12:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:15:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:17:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:20:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:20:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:27:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 15:41:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 16:04:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 16:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 16:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 16:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 16:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 16:13:04 --> ErrorException: pg_query(): Query failed: ERROR:  column &quot;tipo_interes&quot; of relation &quot;radicado&quot; does not exist
+LINE 1: ..., apellidos, celular, email, anonima, tipo_pqrsd, tipo_inter...
+                                                             ^ in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(271): App\Models\IndexModel->radicarpqrsd()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->radicar()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-26 16:13:04 --> pg_query(): Query failed: ERROR:  column &quot;tipo_interes&quot; of relation &quot;radicado&quot; does not exist
+LINE 1: ..., apellidos, celular, email, anonima, tipo_pqrsd, tipo_inter...
+                                                             ^
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/index.php(271): App\Models\IndexModel->radicarpqrsd()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 16:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 16:17:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 16:17:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-26 16:17:59 --> ErrorException: pg_query(): Query failed: ERROR:  value too long for type character(2) in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(271): App\Models\IndexModel->radicarpqrsd()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->radicar()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-26 16:17:59 --> pg_query(): Query failed: ERROR:  value too long for type character(2)
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/index.php(271): App\Models\IndexModel->radicarpqrsd()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-26 16:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 22:28:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 22:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-26 22:30:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

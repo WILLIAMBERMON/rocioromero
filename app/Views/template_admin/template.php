@@ -2,17 +2,17 @@
 <html lang="es">
 
 <head>
-<?php include APPPATH . "views/template_admin/header.php"; ?>  
+<?php include APPPATH . "Views/template_admin/header.php"; ?>  
 
 </head>
 
 <body class="fixed-nav sticky-footer" id="page-top">
 		
 	
-	<?php include APPPATH . "views/template_admin/sidebar.php"; ?>  
+	<?php include APPPATH . "Views/template_admin/sidebar.php"; ?>  
 	<div class="content-wrapper">
 	<div class="container-fluid">
-		<?php include APPPATH . "views/".$view.".php"; ?> 
+		<?php include APPPATH . "Views/".$view.".php"; ?> 
 
 		<div class="modal fade" id="modal-visualizar_documento">
 					<div class="modal-dialog modal-xl">
@@ -38,7 +38,7 @@
 	</div>		
 		
 	<footer class="sticky-footer">
-	<?php include APPPATH . "views/template_admin/footer.php"; ?>  
+	<?php include APPPATH . "Views/template_admin/footer.php"; ?>  
 	</footer>
 	<!--/footer-->
 	</div>

@@ -1,0 +1,905 @@
+INFO - 2023-09-01 14:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:09:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:09:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:10:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:10:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 14:11:43 --> ErrorException: pg_query(): Query failed: ERROR:  operator does not exist: text = integer
+LINE 3: WHERE &quot;user_id&quot; = 1
+                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts. in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/Postgre/Connection.php(187): pg_query()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/User.php(61): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\User->article()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 14:11:43 --> pg_query(): Query failed: ERROR:  operator does not exist: text = integer
+LINE 3: WHERE &quot;user_id&quot; = 1
+                        ^
+HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
+in SYSTEMPATH/Database/Postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/Postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 8 APPPATH/Controllers/User.php(61): find_with_filter()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\User->article()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 14:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:14:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:14:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:15:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:15:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:15:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:15:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 14:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 14:16:12 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/User.php(20): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\User->initController()
+ 6 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 14:16:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 14:16:19 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/User.php(20): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\User->initController()
+ 6 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 14:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 14:16:21 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/User.php(20): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\User->initController()
+ 6 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 14:29:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 14:29:53 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/User.php(20): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\User->initController()
+ 6 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 15:05:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 15:05:13 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/User.php(20): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\User->initController()
+ 6 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 15:05:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 15:05:14 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 15:05:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 15:05:17 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 15:05:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 15:05:22 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 15:05:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 15:05:24 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 15:05:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:06:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:06:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:06:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:06:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:06:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:08:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 15:20:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 16:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 16:21:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 16:24:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 16:24:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 16:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 16:24:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 16:25:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:25:06 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:27:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:27:57 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH\Database\Database.php on line 137.
+ 1 SYSTEMPATH\Database\Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH\Database\Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH\Controllers\BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH\CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH\CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH\CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH\index.php(72): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\Users\\ingdesarrollo2\\Documents\\fedora37\\html\\ci4-admin-lte\\public\\index.php')
+INFO - 2023-09-01 16:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:28:06 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:34:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:34:59 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:39:45 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:39:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:39:49 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:40:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:40:53 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:45:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:45:06 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:45:12 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:45:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:45:28 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:45:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:45:32 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 16:46:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 16:46:13 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:26:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 21:26:01 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 21:27:33 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 21:27:45 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 21:27:47 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 21:27:50 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 21:27:52 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Controllers/BaseController.php(49): CodeIgniter\Database\Config::connect()
+ 4 SYSTEMPATH/CodeIgniter.php(905): App\Controllers\BaseController->initController()
+ 5 SYSTEMPATH/CodeIgniter.php(488): CodeIgniter\CodeIgniter->createController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:40:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 21:40:00 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(22): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 21:40:00 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 8 APPPATH/Controllers/Home.php(22): find_with_filter()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 21:45:40 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(22): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 21:45:40 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 8 APPPATH/Controllers/Home.php(22): find_with_filter()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 21:46:11 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(22): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 21:46:11 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 8 APPPATH/Controllers/Home.php(22): find_with_filter()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 21:46:22 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(22): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 21:46:22 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 8 APPPATH/Controllers/Home.php(22): find_with_filter()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 21:46:27 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(22): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 21:46:27 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 8 APPPATH/Controllers/Home.php(22): find_with_filter()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:50:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 21:50:04 --> Error connecting to the database: ErrorException: oci_pconnect(): ORA-12514: TNS:listener does not currently know of service requested in connect descriptor in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:129
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(129): oci_pconnect()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\OCI8\Connection->connect()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(22): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 21:50:04 --> Unable to connect to the database.
+Main connection [OCI8]: oci_pconnect(): ORA-12514: TNS:listener does not currently know of service requested in connect descriptor
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 4 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 5 APPPATH/Controllers/Home.php(22): find_with_filter()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:50:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 21:50:41 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(22): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 21:50:41 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 8 APPPATH/Controllers/Home.php(22): find_with_filter()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:51:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 21:52:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 21:52:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 21:52:22 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:198
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(198): oci_execute()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(22): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 21:52:22 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 198.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(198): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 8 APPPATH/Controllers/Home.php(22): find_with_filter()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 21:59:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 21:59:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 21:59:46 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+#6 /var/www/html/ci4-admin-lte/app/Common.php(32): CodeIgniter\Model->countAllResults()
+#7 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(22): find_with_filter()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#9 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#10 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#11 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2023-09-01 21:59:46 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1700): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(608): CodeIgniter\Database\BaseBuilder->countAllResults()
+ 7 APPPATH/Common.php(32): CodeIgniter\Model->countAllResults()
+ 8 APPPATH/Controllers/Home.php(22): find_with_filter()
+ 9 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+10 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+11 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+12 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 21:59:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 22:03:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 22:03:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 22:03:22 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/BaseModel.php(557): CodeIgniter\Model->doFind()
+#7 /var/www/html/ci4-admin-lte/app/Config/Services.php(32): CodeIgniter\BaseModel->find()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Config/BaseService.php(193): Config\Services::login()
+#9 /var/www/html/ci4-admin-lte/app/Config/Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance()
+#10 /var/www/html/ci4-admin-lte/app/Views/home/navbar.php(1): Config\Services::login()
+#11 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/View/View.php(224): include('...')
+#12 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Common.php(1180): CodeIgniter\View\View->render()
+#14 /var/www/html/ci4-admin-lte/app/Views/home/index.php(7): view()
+#15 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/View/View.php(224): include('...')
+#16 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Common.php(1180): CodeIgniter\View\View->render()
+#18 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(23): view()
+#19 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#20 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#21 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#22 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2023-09-01 22:03:22 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind()
+ 8 APPPATH/Config/Services.php(32): CodeIgniter\BaseModel->find()
+ 9 SYSTEMPATH/Config/BaseService.php(193): Config\Services::login()
+10 APPPATH/Config/Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance()
+11 APPPATH/Views/home/navbar.php(1): Config\Services::login()
+12 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/home/navbar.php')
+13 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+15 APPPATH/Views/home/index.php(7): view()
+16 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/home/index.php')
+17 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+19 APPPATH/Controllers/Home.php(23): view()
+20 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+21 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+22 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+23 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:03:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 22:04:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 22:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 22:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 22:04:40 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^ in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+#6 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/BaseModel.php(557): CodeIgniter\Model->doFind()
+#7 /var/www/html/ci4-admin-lte/app/Config/Services.php(32): CodeIgniter\BaseModel->find()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Config/BaseService.php(193): Config\Services::login()
+#9 /var/www/html/ci4-admin-lte/app/Config/Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance()
+#10 /var/www/html/ci4-admin-lte/app/Views/home/navbar.php(1): Config\Services::login()
+#11 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/View/View.php(224): include('...')
+#12 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Common.php(1180): CodeIgniter\View\View->render()
+#14 /var/www/html/ci4-admin-lte/app/Views/home/index.php(7): view()
+#15 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/View/View.php(224): include('...')
+#16 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#17 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Common.php(1180): CodeIgniter\View\View->render()
+#18 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(23): view()
+#19 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#20 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#21 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#22 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#23 {main}
+CRITICAL - 2023-09-01 22:04:40 --> pg_query(): Query failed: ERROR:  relation &quot;users&quot; does not exist
+LINE 2: FROM &quot;users&quot;
+             ^
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 SYSTEMPATH/Database/BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query()
+ 6 SYSTEMPATH/Model.php(202): CodeIgniter\Database\BaseBuilder->get()
+ 7 SYSTEMPATH/BaseModel.php(557): CodeIgniter\Model->doFind()
+ 8 APPPATH/Config/Services.php(32): CodeIgniter\BaseModel->find()
+ 9 SYSTEMPATH/Config/BaseService.php(193): Config\Services::login()
+10 APPPATH/Config/Services.php(29): CodeIgniter\Config\BaseService::getSharedInstance()
+11 APPPATH/Views/home/navbar.php(1): Config\Services::login()
+12 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/home/navbar.php')
+13 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+15 APPPATH/Views/home/index.php(7): view()
+16 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/home/index.php')
+17 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+18 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+19 APPPATH/Controllers/Home.php(23): view()
+20 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+21 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+22 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+23 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 22:04:58 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/home/index.php on line 28.
+ 1 APPPATH/Views/home/index.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/home/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:05:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 22:05:18 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/home/index.php on line 28.
+ 1 APPPATH/Views/home/index.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/home/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 22:05:25 --> foreach() argument must be of type array|object, string given
+in APPPATH/Views/home/index.php on line 28.
+ 1 APPPATH/Views/home/index.php(28): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/View/View.php(224): include('/var/www/html/ci4-admin-lte/app/Views/home/index.php')
+ 3 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 5 APPPATH/Controllers/Home.php(23): view()
+ 6 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 7 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 22:06:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 22:06:16 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;codigoss&quot; does not exist
+LINE 1: SELECT * FROM CODIGOSS
+                      ^ in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/app/Models/UserModel.php(87): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(18): App\Models\UserModel->usuarios()
+#6 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#7 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-01 22:06:16 --> pg_query(): Query failed: ERROR:  relation &quot;codigoss&quot; does not exist
+LINE 1: SELECT * FROM CODIGOSS
+                      ^
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/UserModel.php(87): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/Home.php(18): App\Models\UserModel->usuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:06:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 22:06:52 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;codigoss&quot; does not exist
+LINE 1: SELECT * FROM CODIGOSS
+                      ^ in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/app/Models/UserModel.php(87): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(18): App\Models\UserModel->usuarios()
+#6 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#7 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-01 22:06:52 --> pg_query(): Query failed: ERROR:  relation &quot;codigoss&quot; does not exist
+LINE 1: SELECT * FROM CODIGOSS
+                      ^
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/UserModel.php(87): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/Home.php(18): App\Models\UserModel->usuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:07:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 22:07:06 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;codigoss&quot; does not exist
+LINE 1: SELECT * FROM CODIGOSS
+                      ^ in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/app/Models/UserModel.php(87): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(18): App\Models\UserModel->usuarios()
+#6 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#7 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-01 22:07:06 --> pg_query(): Query failed: ERROR:  relation &quot;codigoss&quot; does not exist
+LINE 1: SELECT * FROM CODIGOSS
+                      ^
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/UserModel.php(87): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/Home.php(18): App\Models\UserModel->usuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-01 22:07:56 --> Class "App\Models\Database" not found
+in APPPATH/Models/UserModel.php on line 87.
+ 1 APPPATH/Controllers/Home.php(18): App\Models\UserModel->usuarios()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:09:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-09-01 22:09:49 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;codigoss&quot; does not exist
+LINE 1: SELECT * FROM CODIGOSS
+                      ^ in /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/ci4-admin-lte/app/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/ci4-admin-lte/app/Controllers/Home.php(18): App\Models\UserModel->usuarios()
+#6 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Home->index()
+#7 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/ci4-admin-lte/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/ci4-admin-lte/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-01 22:09:49 --> pg_query(): Query failed: ERROR:  relation &quot;codigoss&quot; does not exist
+LINE 1: SELECT * FROM CODIGOSS
+                      ^
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/UserModel.php(91): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/Home.php(18): App\Models\UserModel->usuarios()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Home->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-01 22:10:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 22:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 22:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-01 22:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

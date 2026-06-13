@@ -1,0 +1,235 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+INFO - 2023-09-21 21:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 21:51:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 21:52:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 22:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+=======
+>>>>>>> 51628cc (vistas radicados, asignación de dependencia a radicado)
+INFO - 2023-09-21 15:44:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 15:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 15:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 15:45:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 15:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 15:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 15:45:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:06:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:09:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:11:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:16:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:17:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 16:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 17:39:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 17:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 17:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 18:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 18:10:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 18:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 18:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 18:53:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 18:54:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 18:54:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 21:33:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:33:11 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(273): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:39:28 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(273): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:39:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:39:38 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(273): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:39:43 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(273): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:40:03 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(273): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:40:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:40:22 --> Undefined variable $información
+in APPPATH/views/index/dependencias.php on line 18.
+ 1 APPPATH/views/index/dependencias.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/index/dependencias.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(29): view()
+ 7 APPPATH/Controllers/index.php(299): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 21:40:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:40:33 --> Undefined variable $información
+in APPPATH/views/index/dependencias.php on line 18.
+ 1 APPPATH/views/index/dependencias.php(18): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/index/dependencias.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(29): view()
+ 7 APPPATH/Controllers/index.php(299): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:41:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 21:42:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:42:03 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(273): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:49:29 --> Class "App\Models\Database" not found
+in APPPATH/Models/IndexModel.php on line 15.
+ 1 APPPATH/Controllers/index.php(273): App\Models\IndexModel->__construct()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:50:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:50:55 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 APPPATH/Models/IndexModel.php(12): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(273): App\Models\IndexModel->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:53:38 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(273): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->dependencias()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 21:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 21:57:31 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(74): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 21:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 22:04:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-09-21 22:04:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 22:04:50 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(74): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 22:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 22:11:27 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(74): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 22:11:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 22:11:30 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(74): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 22:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 22:11:50 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(74): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-09-21 22:20:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-09-21 22:20:32 --> Undefined constant "CodeIgniter\Database\OCI8\OCI_COMMIT_ON_SUCCESS"
+in SYSTEMPATH/Database/Database.php on line 137.
+ 1 SYSTEMPATH/Database/Database.php(55): CodeIgniter\Database\Database->initDriver()
+ 2 SYSTEMPATH/Database/Config.php(82): CodeIgniter\Database\Database->load()
+ 3 SYSTEMPATH/Model.php(158): CodeIgniter\Database\Config::connect()
+ 4 APPPATH/Controllers/index.php(74): CodeIgniter\Model->__construct()
+ 5 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 6 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 7 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 8 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+<<<<<<< HEAD
+>>>>>>> vistas radicados, asignación de dependencia a radicado
+=======
+>>>>>>> 51628cc (vistas radicados, asignación de dependencia a radicado)

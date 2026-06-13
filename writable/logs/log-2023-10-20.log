@@ -1,0 +1,137 @@
+INFO - 2023-10-20 14:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 16:00:38 --> Undefined array key "codigo"
+in APPPATH/views/radicados/index.php on line 29.
+ 1 APPPATH/views/radicados/index.php(29): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(29): view()
+ 7 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 16:01:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:04:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-20 16:04:48 --> Undefined array key "descripción"
+in APPPATH/views/radicados/index.php on line 46.
+ 1 APPPATH/views/radicados/index.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(29): view()
+ 7 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 16:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:07:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:08:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:10:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:14:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:15:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 16:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:14:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:15:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:35:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 20:35:04 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH/Helpers/url_helper.php on line 60.
+ 1 SYSTEMPATH/Helpers/url_helper.php(60): strpos(null, '://')
+ 2 SYSTEMPATH/Helpers/url_helper.php(118): _get_uri(null, Object(Config\App))
+ 3 SYSTEMPATH/Helpers/url_helper.php(158): site_url(null, null, Object(Config\App))
+ 4 APPPATH/views/radicados/index.php(68): base_url(null)
+ 5 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 6 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 9 APPPATH/Entities/Template.php(29): view('template_admin/template', [...])
+10 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview('radicados/index', '1')
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 20:35:04 --> CodeIgniter\HTTP\URI::removeDotSegments(): Argument #1 ($path) must be of type string, null given, called in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Helpers/url_helper.php on line 71
+in SYSTEMPATH/HTTP/URI.php on line 197.
+ 1 SYSTEMPATH/Helpers/url_helper.php(71): CodeIgniter\HTTP\URI::removeDotSegments()
+ 2 SYSTEMPATH/Helpers/url_helper.php(118): _get_uri()
+ 3 SYSTEMPATH/Helpers/url_helper.php(158): site_url()
+ 4 APPPATH/views/radicados/index.php(68): base_url()
+ 5 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 6 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 7 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 9 APPPATH/Entities/Template.php(29): view()
+10 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview()
+11 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+12 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+13 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+14 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 20:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 20:35:42 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH/Helpers/url_helper.php on line 60.
+ 1 SYSTEMPATH/Helpers/url_helper.php(60): strpos(null, '://')
+ 2 SYSTEMPATH/Helpers/url_helper.php(118): _get_uri(null, null)
+ 3 APPPATH/views/radicados/index.php(68): site_url(null)
+ 4 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 5 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 6 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 8 APPPATH/Entities/Template.php(29): view('template_admin/template', [...])
+ 9 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview('radicados/index', '1')
+10 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+12 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 20:35:42 --> CodeIgniter\HTTP\URI::removeDotSegments(): Argument #1 ($path) must be of type string, null given, called in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Helpers/url_helper.php on line 71
+in SYSTEMPATH/HTTP/URI.php on line 197.
+ 1 SYSTEMPATH/Helpers/url_helper.php(71): CodeIgniter\HTTP\URI::removeDotSegments()
+ 2 SYSTEMPATH/Helpers/url_helper.php(118): _get_uri()
+ 3 APPPATH/views/radicados/index.php(68): site_url()
+ 4 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 5 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 6 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 8 APPPATH/Entities/Template.php(29): view()
+ 9 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview()
+10 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 20:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-10-20 20:36:04 --> [DEPRECATED] strpos(): Passing null to parameter #1 ($haystack) of type string is deprecated in SYSTEMPATH/Helpers/url_helper.php on line 60.
+ 1 SYSTEMPATH/Helpers/url_helper.php(60): strpos(null, '://')
+ 2 SYSTEMPATH/Helpers/url_helper.php(118): _get_uri(null, null)
+ 3 APPPATH/views/radicados/index.php(68): site_url(null)
+ 4 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 5 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 6 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 8 APPPATH/Entities/Template.php(29): view('template_admin/template', [...])
+ 9 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview('radicados/index', '1')
+10 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+12 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-20 20:36:04 --> CodeIgniter\HTTP\URI::removeDotSegments(): Argument #1 ($path) must be of type string, null given, called in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Helpers/url_helper.php on line 71
+in SYSTEMPATH/HTTP/URI.php on line 197.
+ 1 SYSTEMPATH/Helpers/url_helper.php(71): CodeIgniter\HTTP\URI::removeDotSegments()
+ 2 SYSTEMPATH/Helpers/url_helper.php(118): _get_uri()
+ 3 APPPATH/views/radicados/index.php(68): site_url()
+ 4 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 5 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 6 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 8 APPPATH/Entities/Template.php(29): view()
+ 9 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview()
+10 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+11 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-20 20:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:36:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:37:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-20 20:47:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

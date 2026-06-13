@@ -1,0 +1,649 @@
+INFO - 2023-11-09 13:12:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:12:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:14:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:15:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:16:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:23:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:29:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:29:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:30:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:37:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:38:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:39:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:40:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:40:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:40:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:42:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:42:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:43:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:43:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:44:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:44:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:46:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 13:46:17 --> The original file is not a valid file.
+in SYSTEMPATH/HTTP/Files/UploadedFile.php on line 137.
+ 1 SYSTEMPATH/HTTP/Files/UploadedFile.php(137): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH/Controllers/index.php(446): CodeIgniter\HTTP\Files\UploadedFile->move()
+ 3 APPPATH/Controllers/index.php(199): App\Controllers\Index->upload()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 13:46:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:47:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:47:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:47:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:50:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:50:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:50:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 13:51:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:11:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:12:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:13:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 15:13:19 --> Undefined array key "fecha_sol"
+in APPPATH/views/index/radicar.php on line 42.
+ 1 APPPATH/views/index/radicar.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(17): include('/var/www/html/pqrsd/app/views/index/radicar.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(34): view()
+ 7 APPPATH/Controllers/index.php(306): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 15:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 15:15:45 --> Undefined array key "fecha_solicitud"
+in APPPATH/views/index/radicar.php on line 42.
+ 1 APPPATH/views/index/radicar.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(17): include('/var/www/html/pqrsd/app/views/index/radicar.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(34): view()
+ 7 APPPATH/Controllers/index.php(306): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 15:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:19:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:19:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:20:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:25:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:25:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:30:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 15:30:45 --> Trying to access array offset on value of type null
+in APPPATH/views/index/consultas.php on line 117.
+ 1 APPPATH/views/index/consultas.php(117): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template/template.php(17): include('/var/www/html/pqrsd/app/views/index/consultas.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(34): view()
+ 7 APPPATH/Controllers/index.php(595): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->consultas()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 15:32:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:35:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:35:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:39:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:41:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:44:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 15:45:23 --> Undefined array key "radicar"
+in APPPATH/Controllers/index.php on line 192.
+ 1 APPPATH/Controllers/index.php(192): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 15:46:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 15:46:33 --> Undefined array key "radicar"
+in APPPATH/Controllers/index.php on line 192.
+ 1 APPPATH/Controllers/index.php(192): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 15:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 15:46:39 --> Undefined variable $indexmodel
+in APPPATH/Controllers/index.php on line 594.
+ 1 APPPATH/Controllers/index.php(594): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->consultas()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 15:47:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:47:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 15:57:48 --> Unclosed '{' on line 591 does not match ')'
+in APPPATH/Controllers/index.php on line 593.
+ 1 SYSTEMPATH/Autoloader/Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH/Autoloader/Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH/CodeIgniter.php(890): class_exists()
+ 5 SYSTEMPATH/CodeIgniter.php(484): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 15:57:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:59:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 15:59:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:00:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:03:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:04:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:04:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:06:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 16:06:49 --> Undefined variable $radicadosmodel
+in APPPATH/Controllers/index.php on line 568.
+ 1 APPPATH/Controllers/index.php(568): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicado()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 16:07:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:08:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:09:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:10:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-09 16:12:18 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/index/radicados.php on line 32.
+ 1 APPPATH/views/index/radicados.php(32): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/index/radicados.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/index.php(588): App\Entities\Template->renderview('index/radicados', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicados()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 16:12:18 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/index/radicados.php on line 32.
+ 1 APPPATH/views/index/radicados.php(32): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/index/radicados.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/index.php(588): App\Entities\Template->renderview('index/radicados', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicados()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 16:12:18 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/index/radicados.php on line 32.
+ 1 APPPATH/views/index/radicados.php(32): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/index/radicados.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/index.php(588): App\Entities\Template->renderview('index/radicados', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicados()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Index))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 16:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:33:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:35:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:36:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:36:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:36:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:36:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 16:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:09:36 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 110.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:09:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:09:37 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 110.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:09:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:09:42 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 110.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:10:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:10:13 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 110.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:10:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:11:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:11:26 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 111.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:11:27 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 111.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:11:32 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 111.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:11:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:12:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:12:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:13:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+WARNING - 2023-11-09 22:13:03 --> [DEPRECATED] explode(): Passing null to parameter #2 ($string) of type string is deprecated in APPPATH/views/radicados/ugad.php on line 111.
+ 1 APPPATH/views/radicados/ugad.php(111): explode('/', null)
+ 2 APPPATH/Views/template_admin/template.php(15): include('/var/www/html/pqrsd/app/views/radicados/ugad.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render('template_admin/template', [], true)
+ 6 APPPATH/Entities/Template.php(34): view('template_admin/template', [...])
+ 7 APPPATH/Controllers/radicados.php(126): App\Entities\Template->renderview('radicados/ugad', '1')
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->ugad()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Radicados))
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:13:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:14:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:14:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:16:01 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:16:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:16:02 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:16:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:16:07 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:16:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:16:17 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:16:18 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:16:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:16:23 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:16:53 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:17:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:17:05 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:17:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:17:06 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:17:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:17:12 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 112.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:17:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:17:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:17:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:17:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:17:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:17:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:17:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:18:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:18:24 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:18:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:18:26 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:18:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:18:28 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:18:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:18:33 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:19:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:19:03 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:19:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:19:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:22:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:22:07 --> filesize(): stat failed for /var/www/html/pqrsd/public/../../../uploads/1694534466_7fde1f355cee86fdb396.jpeg
+in APPPATH/Controllers/Radicados.php on line 103.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Radicados.php(103): filesize()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:22:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:22:24 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:22:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:22:25 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:22:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:22:31 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:23:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:23:01 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/Radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:23:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:23:59 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/index.php on line 695.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:24:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:24:04 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/index.php on line 695.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:24:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:24:45 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:24:46 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:24:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:24:54 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:24:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:24:55 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:25:00 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:25:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-11-09 22:25:31 --> Call to undefined function App\Controllers\ fpassthru()
+in APPPATH/Controllers/radicados.php on line 113.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->soporte()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-11-09 22:30:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:32:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:32:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:33:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-11-09 22:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

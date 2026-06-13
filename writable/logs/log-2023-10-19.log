@@ -1,0 +1,167 @@
+INFO - 2023-10-19 20:24:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-19 20:24:19 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/pqrsd/app/Models/RadicadosModel.php(20): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/radicados.php(16): App\Models\RadicadosModel->get_radicados()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Radicados->index()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-19 20:24:19 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/RadicadosModel.php(20): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/radicados.php(16): App\Models\RadicadosModel->get_radicados()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 20:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-19 20:24:22 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/pqrsd/app/Models/RadicadosModel.php(20): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/radicados.php(16): App\Models\RadicadosModel->get_radicados()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Radicados->index()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-19 20:24:22 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/RadicadosModel.php(20): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/radicados.php(16): App\Models\RadicadosModel->get_radicados()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 20:24:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:24:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:24:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-19 20:24:31 --> ErrorException: oci_execute(): ORA-00942: la tabla o vista no existe in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php:199
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/OCI8/Connection.php(199): oci_execute()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/pqrsd/app/Models/RadicadosModel.php(20): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/radicados.php(16): App\Models\RadicadosModel->get_radicados()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Radicados->index()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-19 20:24:31 --> oci_execute(): ORA-00942: la tabla o vista no existe
+in SYSTEMPATH/Database/OCI8/Connection.php on line 199.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/OCI8/Connection.php(199): oci_execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\OCI8\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/RadicadosModel.php(20): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/radicados.php(16): App\Models\RadicadosModel->get_radicados()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 20:25:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-19 20:25:44 --> ErrorException: pg_query(): Query failed: ERROR:  relation &quot;pqrs.radicado&quot; does not exist
+LINE 1: SELECT * FROM PQRS.RADICADO
+                      ^ in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(187): pg_query()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /var/www/html/pqrsd/app/Models/RadicadosModel.php(20): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/radicados.php(16): App\Models\RadicadosModel->get_radicados()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Radicados->index()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-10-19 20:25:44 --> pg_query(): Query failed: ERROR:  relation &quot;pqrs.radicado&quot; does not exist
+LINE 1: SELECT * FROM PQRS.RADICADO
+                      ^
+in SYSTEMPATH/Database/postgre/Connection.php on line 187.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Database/postgre/Connection.php(187): pg_query()
+ 3 SYSTEMPATH/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+ 4 SYSTEMPATH/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 5 APPPATH/Models/RadicadosModel.php(20): CodeIgniter\Database\BaseConnection->query()
+ 6 APPPATH/Controllers/radicados.php(16): App\Models\RadicadosModel->get_radicados()
+ 7 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 8 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 9 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+10 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 20:26:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 20:26:27 --> Undefined array key "ID"
+in APPPATH/views/radicados/index.php on line 26.
+ 1 APPPATH/views/radicados/index.php(26): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(29): view()
+ 7 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 20:27:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:28:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:28:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:28:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:31:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:38:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:43:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:44:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 20:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:13:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:19:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:23:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:25:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:25:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:26:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:26:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:27:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:34:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:35:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:39:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:45:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-10-19 21:45:25 --> Undefined variable $sol
+in APPPATH/views/radicados/index.php on line 33.
+ 1 APPPATH/views/radicados/index.php(33): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Views/template_admin/template.php(14): include('/var/www/html/pqrsd/app/views/radicados/index.php')
+ 3 SYSTEMPATH/View/View.php(224): include('/var/www/html/pqrsd/app/Views/template_admin/template.php')
+ 4 SYSTEMPATH/View/View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH/Common.php(1180): CodeIgniter\View\View->render()
+ 6 APPPATH/Entities/Template.php(29): view()
+ 7 APPPATH/Controllers/radicados.php(22): App\Entities\Template->renderview()
+ 8 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Radicados->index()
+ 9 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2023-10-19 21:45:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:47:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:58:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 21:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-19 22:47:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

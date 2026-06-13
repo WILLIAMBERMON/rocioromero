@@ -2,25 +2,25 @@
 <html lang="es">
 
 <head>
-<?php include APPPATH . "views/template/header.php"; ?>  
+<?php include APPPATH . "Views/template/header.php"; ?>  
 
 </head>
 
 <body>
 		
 	<div id="page">
-	<?php include APPPATH . "views/template/sidebar.php"; ?>  
+	<?php include APPPATH . "Views/template/sidebar.php"; ?>  
 	
 	<!-- /header -->
 	
 	<main id="viewcont">
-		<?php include APPPATH . "views/".$view.".php"; ?> 
+		<?php include APPPATH . "Views/".$view.".php"; ?> 
 		
 	</main>
 	<!-- /main -->
 
 	<footer>
-	<?php include APPPATH . "views/template/footer.php"; ?>  
+	<?php include APPPATH . "Views/template/footer.php"; ?>  
 	</footer>
 	<!--/footer-->
 	</div>

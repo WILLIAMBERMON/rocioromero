@@ -1,0 +1,113 @@
+INFO - 2024-01-11 20:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-11 20:33:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-11 20:34:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-11 20:34:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-11 20:35:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-11 20:35:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-11 20:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-11 20:38:31 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(272): App\Models\IndexModel->radicarpqrsd()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->radicar()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-11 20:38:31 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(272): App\Models\IndexModel->radicarpqrsd()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-11 20:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-11 20:40:46 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(272): App\Models\IndexModel->radicarpqrsd()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->radicar()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-11 20:40:46 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(272): App\Models\IndexModel->radicarpqrsd()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-11 20:40:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-11 20:49:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-11 20:50:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-11 20:51:21 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(272): App\Models\IndexModel->radicarpqrsd()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->radicar()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-11 20:51:21 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(272): App\Models\IndexModel->radicarpqrsd()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-11 21:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-11 21:02:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-11 21:04:19 --> Error connecting to the database: ErrorException: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections? in /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php:72
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/postgre/Connection.php(72): pg_connect()
+#2 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(391): CodeIgniter\Database\Postgre\Connection->connect()
+#3 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#4 /var/www/html/pqrsd/app/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+#5 /var/www/html/pqrsd/app/Controllers/index.php(272): App\Models\IndexModel->radicarpqrsd()
+#6 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(932): App\Controllers\Index->radicar()
+#7 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#8 /var/www/html/pqrsd/vendor/codeigniter4/framework/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#9 /var/www/html/pqrsd/public/index.php(72): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2024-01-11 21:04:19 --> Unable to connect to the database.
+Main connection [postgre]: pg_connect(): Unable to connect to PostgreSQL server: connection to server at &quot;192.168.13.28&quot;, port 5432 failed: Connection timed out
+	Is the server running on that host and accepting TCP/IP connections?
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH/Models/IndexModel.php(25): CodeIgniter\Database\BaseConnection->query()
+ 3 APPPATH/Controllers/index.php(272): App\Models\IndexModel->radicarpqrsd()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\Index->radicar()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(72): CodeIgniter\CodeIgniter->run()

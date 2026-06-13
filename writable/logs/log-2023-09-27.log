@@ -1,0 +1,9 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
+INFO - 2023-09-27 16:16:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+INFO - 2023-09-27 15:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> vistas radicados, asignación de dependencia a radicado
+=======
+INFO - 2023-09-27 15:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> 51628cc (vistas radicados, asignación de dependencia a radicado)
