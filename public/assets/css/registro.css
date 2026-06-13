@@ -1,0 +1,59 @@
+.bs-wizard>.bs-wizard-step {
+    width: 25% !important;
+}
+.bs-wizard>.bs-wizard-step.disabled>.bs-wizard-dot {
+    background-color: white !important;
+}
+
+#hero_in.courses .wrapper {
+    background-color: rgba(171, 25, 22, 0.5) !important;
+
+}
+
+.bs-wizard>.bs-wizard-step>.bs-wizard-dot {
+    background-color: #aa1916 !important;
+}
+
+.input_field{
+    color:white !important;
+}
+.input__label-content{
+    color:white !important;
+}
+.input_label{
+    color:white !important;
+}
+select,
+option {
+    color:black !important;
+}
+
+.header {
+    -moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    background: #000;
+    background: -webkit-linear-gradient(left,#c0b5a4,#615043);
+    background: linear-gradient(to right,#c0b5a4,#615043);
+    padding: 15px 20px;
+}
+
+  .work-compleate{
+   
+    transition: all ease-in-out 1s;
+  }
+
+  .invalid {
+    background-size: 15px 15px;
+    padding-left:22px;
+    line-height:24px;
+    color:#ec3f41;
+}
+.valid {
+    background-size: 15px 15px;
+    padding-left:22px;
+    line-height:24px;
+    color:#3a7d34;
+}
