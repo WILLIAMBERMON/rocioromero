@@ -28,16 +28,16 @@
                   <td style="text-align:center;" ><?php echo ($prop['estado']=='abierto')?'Activo':'Inactivo';?></td>
                   
                   <td style="text-align:center;" >
-                    <button class="btn btn-success regular-button botones" onclick="buscar_documentos(<?php echo "'".$prop['dependencia']."','".$prop['num_contrato']."','','agregardoc',true";?>)" title="Archivos cargados"> <i class="fa fa-fw fa-file-pdf"></i></button>
+                    <button class="btn btn-success regular-button botones" onclick="buscar_documentos(<?php echo "'9','".$prop['num_contrato']."','','agregardoc',true";?>)" title="Archivos cargados"> <i class="fa fa-fw fa-file-pdf"></i></button>
                     <?php if($prop['dependencia'] == '8'): ?>
                     <button class="btn btn-primary regular-button botones" onclick="buscar_documentos(<?php echo "'".$prop['dependencia']."','".$prop['num_contrato']."','imagenes'";?>)" title="Imagenes cargadas"> <i class="fa fa-fw fa-file-image"></i></button>
                     <?php endif; ?>
                   </td>
                   <td style="text-align:center;" >
                   
-                  <a type= "button" class="btn btn-flat btn-primary regular-button botones" href="#modal-editar<?php echo $prop['num_contrato'];?>" title="Editar Expediente" data-toggle="modal"><i class="fa-sharp fa-regular fa-pencil" ></i></a>
+                  <a type= "button" class="btn btn-flat btn-primary regular-button botones" href="#modal-editar<?php echo $prop['num_contrato'];?>" onclick="buscar_documentos(<?php echo "'9','".$prop['num_contrato']."','','agregardoc_edit".$prop['num_contrato']."'";?>)" title="Editar Expediente" data-toggle="modal"><i class="fa-sharp fa-regular fa-pencil" ></i></a>
                   <a type= "button" class="btn btn-flat btn-danger " href="#modal-eliminar<?php echo $prop['num_contrato'];?>" title="Eliminar Expediente" data-toggle="modal"><i class="fa-sharp fa-regular fa-times"></i></a>  
-                  <?php echo form_open(base_url($tiporeal), ['class' => 'form-horizontal', 'id' => 'form_dependencia', 'role' => 'form'],['actualizar'=>'1','contrato'=>$prop['num_contrato'],'vendedor'=>$prop['nompropietario'],'direccion'=>($prop['direccion'].'. '.$prop['barrio'])]);?>
+                  <?php echo form_open_multipart(base_url($tiporeal), ['class' => 'form-horizontal', 'id' => 'form_dependencia', 'role' => 'form'],['actualizar'=>'1','documentos'=>'1','contrato'=>$prop['num_contrato'],'vendedor'=>$prop['nompropietario'],'direccion'=>($prop['direccion'].'. '.$prop['barrio'])]);?>
                     
                     <div class="modal fade" id="modal-editar<?php echo $prop['num_contrato'];?>">
                         <div class="modal-dialog modal-lg">
@@ -101,6 +101,9 @@
                                   <label>Comprador </label>
                                   <input type="text" class="form-control" value="<?php echo ($cliente)?($cliente[0]):''; ?>" name="clienter" id="clienter" placeholder="Comprador">
                                 </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div id="agregardoc_edit<?php echo $prop['num_contrato'];?>"></div>
                               </div>
                 </div>
                             </div>

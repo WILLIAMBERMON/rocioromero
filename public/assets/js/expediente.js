@@ -17,7 +17,7 @@ $.ajax({
             var urls = info.ruta_archivos;
             console.log(urls);
             var deleteurl = host+'file_delete';
-            var extensionesPermitidas = (tipodoc == 'imagenes') ? ["jpg", "jpeg", "png", "gif"] : ["jpg", "png", "gif","pdf","doc","docx","ppt","pptx","xls","xlsx"];
+            var extensionesPermitidas = (tipodoc == 'imagenes') ? ["jpg", "jpeg", "jpe", "jfif", "png", "gif", "webp", "bmp"] : ["jpg", "jpeg", "jpe", "jfif", "png", "gif", "webp", "bmp","pdf","doc","docx","ppt","pptx","xls","xlsx"];
             if(urls.length > 0){
                 var urlcaption = [];
                 var contador = 1;
@@ -120,6 +120,34 @@ $.ajax({
     });
 
 }
+
+function textoSeguro(valor){
+    return $('<div>').text(valor).html();
+}
+
+function renderizarDescripcionesImagenes(input){
+    var archivos = input.files || [];
+    var contenedor = $('#descripciones-imagenes');
+    contenedor.html('');
+
+    if(archivos.length === 0){
+        return;
+    }
+
+    contenedor.append('<br><label>Descripcion de cada imagen</label>');
+    Array.from(archivos).forEach(function(archivo, index){
+        contenedor.append(
+            '<div class="form-group">' +
+                '<label>Imagen '+(index + 1)+': '+textoSeguro(archivo.name)+'</label>' +
+                '<input type="text" class="form-control" name="descripcion_imagen[]" placeholder="Descripcion de la imagen">' +
+            '</div>'
+        );
+    });
+}
+
+$(document).on('change', '#input-24', function(){
+    renderizarDescripcionesImagenes(this);
+});
 
 function buscarpropietario(){
           

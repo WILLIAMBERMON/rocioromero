@@ -166,6 +166,13 @@ class DependenciaModel extends Model
         if ($this->db) 
         {
             $es_imagen = ((string)$id_documento === '0' && strpos((string)$complemento, 'imagenes') === 0);
+            if(!$es_imagen && !$url){
+                return $this->db->query(
+                    "UPDATE rr_documentos_expediente SET complemento = ? WHERE num_contrato = ? AND id_documento = ?",
+                    [$complemento, $contrato, $id_documento]
+                );
+            }
+
             if(!$es_imagen){
                 $this->db->query("delete from rr_documentos_expediente where num_contrato = ? and id_documento = ?", [$contrato, $id_documento]);
             }
@@ -281,6 +288,23 @@ class DependenciaModel extends Model
        return '';
     }
 
+    public function ensureCodigoInactivadoColumn()
+    {
+        if ($this->db) 
+        {
+            try {
+                $campos = $this->db->getFieldNames('rr_expediente');
+                if(!in_array('codigo_inactivado', $campos)){
+                    $this->db->query("ALTER TABLE rr_expediente ADD COLUMN codigo_inactivado VARCHAR(100)");
+                }
+                return true;
+            } catch (\Throwable $e) {
+                return false;
+            }
+        }
+        return false;
+    }
+
     public function expedientes_compra($tipo,$estado = 'abierto'){
         if ($this->db) 
         {
@@ -298,10 +322,18 @@ class DependenciaModel extends Model
        return '';
     }
 
-    public function actualizarexpediente($num_contrato,$codigo,$fecha_inicio,$fecha_fin,$dependencia,$estado,$cliente,$contrato_arriendo = ''){
+    public function actualizarexpediente($num_contrato,$codigo,$fecha_inicio,$fecha_fin,$dependencia,$estado,$cliente,$contrato_arriendo = '', $codigo_inactivado = null){
         if ($this->db) 
         {
-                return $query = $this->db->query("UPDATE rr_expediente set codigo='{$codigo}',fecha_inicio={$fecha_inicio},fecha_fin={$fecha_fin},dependencia='{$dependencia}',estado='{$estado}',cliente='{$cliente}'".(($contrato_arriendo)?(", contrato_arriendo = '{$contrato_arriendo}'"):'')." WHERE num_contrato = '{$num_contrato}'");
+                $codigo_inactivado_sql = '';
+                if($codigo_inactivado !== null){
+                    if(!$this->ensureCodigoInactivadoColumn()){
+                        return false;
+                    }
+                    $codigo_inactivado_sql = ", codigo_inactivado = ".(($codigo_inactivado !== '') ? $this->db->escape($codigo_inactivado) : 'null');
+                }
+
+                return $query = $this->db->query("UPDATE rr_expediente set codigo='{$codigo}',fecha_inicio={$fecha_inicio},fecha_fin={$fecha_fin},dependencia='{$dependencia}',estado='{$estado}',cliente='{$cliente}'".(($contrato_arriendo)?(", contrato_arriendo = '{$contrato_arriendo}'"):'').$codigo_inactivado_sql." WHERE num_contrato = '{$num_contrato}'");
         }else{
             echo '<script>toastr.error("No hay conexión a la base de datos.");</script>';
         }

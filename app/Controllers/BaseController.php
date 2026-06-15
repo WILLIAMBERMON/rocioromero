@@ -63,6 +63,21 @@ class BaseController extends Controller
 		//$this->title_page = '';
 //$this->data = array();
 	}
+
+	protected function codificarClaveUsuario($clave)
+	{
+		return base64_encode((string) $clave);
+	}
+
+	protected function validarClaveUsuario($clave_ingresada, $clave_guardada)
+	{
+		$clave_guardada = trim((string) $clave_guardada);
+		if(!$clave_guardada){
+			return false;
+		}
+
+		return hash_equals($clave_guardada, $this->codificarClaveUsuario($clave_ingresada));
+	}
 /*
 	public function renderview($view){
 		
@@ -241,7 +256,7 @@ class BaseController extends Controller
      
         if(isset($file) && $file){
                 $fileExtension = $file->guessExtension();
-                $allowedfileExtensions = array('jpg','jpeg', 'gif', 'png', 'zip', 'txt', 'xls', 'doc', 'docx', 'pdf','ppt','pptx','xls','xlsx');
+                $allowedfileExtensions = array('jpg','jpeg','jpe','jfif', 'gif', 'png', 'webp', 'bmp', 'zip', 'txt', 'xls', 'doc', 'docx', 'pdf','ppt','pptx','xls','xlsx');
                 if (in_array($fileExtension, $allowedfileExtensions))
                 {    
                     if ($file->isValid() && ! $file->hasMoved()) {

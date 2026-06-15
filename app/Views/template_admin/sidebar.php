@@ -17,11 +17,16 @@
                         <i class="fa fa-duotone fa-building"></i>
                         <span class="nav-link-text"> Arriendos</span>
                       </a>
-                      <ul class="sidenav-second-level collapse <?php echo ((in_array($active_sidebar ,array('arriendos','notificaciones','consignacion_arriendo')))?'show':''); ?>" id="menuarriendos">
+                      <ul class="sidenav-second-level collapse <?php echo ((in_array($active_sidebar ,array('arriendos','notificaciones','consignacion_arriendo','consignacion_arriendo_inactivas')))?'show':''); ?>" id="menuarriendos">
                         
                         <li class="<?php echo (($active_sidebar == 'consignacion_arriendo')?'active':''); ?>">
                         <a href="<?php echo base_url('consignacion_arriendo'); ?>"> <i class="fa fa-fw fa-list"></i>
                           <span class="nav-link-text"> Consignación de inmueble</span></a>
+                        </li>
+
+                        <li class="<?php echo (($active_sidebar == 'consignacion_arriendo_inactivas')?'active':''); ?>">
+                        <a href="<?php echo base_url('consignacion_arriendo_inactivas'); ?>"> <i class="fa fa-fw fa-archive"></i>
+                          <span class="nav-link-text"> Consignaciones inactivas</span></a>
                         </li>
 
                         <li class="<?php echo (($active_sidebar == 'arriendos')?'active':''); ?>">

@@ -139,7 +139,6 @@ class Dependencia extends BaseController
                     }else{
                         $this->template->add_messages('error','Algo salio mal al tratar de actualizar el expediente, por favor vuelva a intentarlo nuevamente.'); 
                     }
-                    
                 }
             }
         }
@@ -223,6 +222,7 @@ class Dependencia extends BaseController
 
                 if(isset($get_documentos) && $get_documentos){
                     foreach($get_documentos as $docu){
+                        $ruta_archivo = '';
                         $namearchivo = 'doc_'.$docu['id_documento'];
                         $file = $this->request->getFile($namearchivo);
                         $compl = (isset($post['comp_'.$docu['id_documento']]))?($post['comp_'.$docu['id_documento']]):'';
@@ -240,7 +240,7 @@ class Dependencia extends BaseController
                             }
                         }
 
-                        if($ruta_archivo){
+                        if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                             $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['contrato']);
                         }
                     }
@@ -478,10 +478,9 @@ class Dependencia extends BaseController
                             $tabla .= '<div class="alert alert-info">No hay imagenes cargadas para este arriendo.</div>';
                         }
 
-                        $tabla .= '<label>Descripcion de la imagen a cargar</label>
-                            <input type="text" class="form-control" name="descripcion_imagen" placeholder="Descripcion de la imagen">
-                            <br><label>Imagenes</label><br>
-                            <input id="input-24" name="imagenes[]" type="file" multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="Seleccionar Archivos...">';
+                        $tabla .= '<label>Imagenes</label><br>
+                            <input id="input-24" name="imagenes[]" type="file" multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="Seleccionar Archivos...">
+                            <div id="descripciones-imagenes"></div>';
 
                         return json_encode(array('carga'=> true, 'tabla' => $tabla,'ruta_archivos'=>$ruta_archivos));
                     }
@@ -520,7 +519,7 @@ class Dependencia extends BaseController
 </div>';
 $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" name="imagenes[]" type="file"  multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="Seleccionar Archivos...">'):'';
                         }else{
-                            $tabla = '<hr><br><b>Documentos cargados: </b><br><table class="table table-bordered table-striped">
+                            $tabla = '<hr><br><b>Documentos cargados: </b><br><table class="table table-bordered table-striped table-dark">
                             <thead>
                             <tr>
                                 <th style="text-align:center; width: 20%">DOCUMENTO</th>
@@ -546,7 +545,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                         
                     }else{
                         if($tipodoc != 'imagenes'){
-                        $tabla = '<table class="table table-bordered table-striped">
+                        $tabla = '<table class="table table-bordered table-striped table-dark">
                         <thead>
                         <tr>
                             <th style="text-align:center; width: 40%">DOCUMENTO</th>
@@ -726,6 +725,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
 
                 if(isset($get_documentos) && $get_documentos){
                     foreach($get_documentos as $docu){
+                        $ruta_archivo = '';
                         $namearchivo = 'doc_'.$docu['id_documento'];
                         $file = $this->request->getFile($namearchivo);
                         $compl = (isset($post['comp_'.$docu['id_documento']]))?($post['comp_'.$docu['id_documento']]):'';
@@ -743,7 +743,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                             }
                         }
 
-                        if($ruta_archivo){
+                        if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                             $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['contrato']);
                         }
                     }
@@ -885,7 +885,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                             }
                         }
 
-                        if($ruta_archivo){
+                        if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                             $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['contrato']);
                         }
                     }
@@ -1069,34 +1069,29 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                                 }
                             }
 
-                            if($ruta_archivo){
+                            if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                                 $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['contrato']);
                             }
                         }
                     }
                     $files = $this->request->getFiles('imagenes');
                     $url_respuesta = '';
-                    $descripcion_imagen = isset($post['descripcion_imagen']) ? trim($post['descripcion_imagen']) : '';
-                    $complemento_imagen = ($descripcion_imagen) ? ('imagenes*w*'.$descripcion_imagen) : 'imagenes';
                     
                     if ((empty($_FILES['imagenes']['name'][0]))) {
                         $files = '';
                     }
                     if(isset($files) && $files){ 
-                        
+                        $descripciones_imagenes = isset($post['descripcion_imagen']) ? $post['descripcion_imagen'] : [];
                         foreach($files["imagenes"] as $key => $item){
                             $token = bin2hex(openssl_random_pseudo_bytes(12));
                                 $ruta = $this->upload($item,$namedepen.'/'.$post['contrato'].'/imagenes');
                                 if($ruta['errors'] == 'success'){
-                                    $archivos[] = $ruta;
+                                    $descripcion_imagen = is_array($descripciones_imagenes) ? trim($descripciones_imagenes[$key] ?? '') : trim($descripciones_imagenes);
+                                    $complemento_imagen = ($descripcion_imagen) ? ('imagenes*w*'.$descripcion_imagen) : 'imagenes';
+                                    $dependencias->agregardocumento('0',$complemento_imagen,$ruta['ruta'],$post['contrato']);
                                 }else{
                                     $this->template->add_messages('info','El archivo no pude ser cargado.');
                                 }
-                        }
-                        if(isset($archivos) && $archivos){
-                            foreach($archivos as $files){
-                                $dependencias->agregardocumento('0','imagenes',$files['ruta'],$post['contrato']);
-                            }
                         }
                     }
 
@@ -1159,7 +1154,9 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                     }else{
                         $this->template->session_messages('error','Algo salio mal al tratar de actualizar la consignación, por favor vuelva a intentarlo nuevamente.'); 
                     }
-                    return $this->response->redirect('consignacion');
+                    if(!isset($post['documentos'])){
+                        return $this->response->redirect('consignacion');
+                    }
                 }
             }    
             if(isset($post['vender'])){   
@@ -1185,7 +1182,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                 }
             }
             $get_documentos = $dependencias->get_documentos();
-            if(isset($post['documentos']) && $post['contrato']){
+            if(isset($post['documentos']) && $post['contrato'] && !isset($post['arrendar'])){
                 $namedepen='';
                 foreach($get_dependencias as $depen){
                     if($depen['id_dependencia']=='11')
@@ -1212,7 +1209,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                             }
                         }
 
-                        if($ruta_archivo){
+                        if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                             $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['contrato']);
                         }
                     }
@@ -1285,7 +1282,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                                 }
                             }
 
-                            if($ruta_archivo){
+                            if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                                 $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['contrato']);
                             }
                         }
@@ -1427,7 +1424,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                                 }
                             }
 
-                            if($ruta_archivo){
+                            if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                                 $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['codigo']);
                             }
                         }
@@ -1503,7 +1500,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
             }
 
             $get_documentos = $dependencias->get_documentos();
-            if(isset($post['documentos']) && $post['contrato']){
+            if(isset($post['documentos']) && $post['contrato'] && !isset($post['arrendar'])){
                 $namedepen='';
                 foreach($get_dependencias as $depen){
                     if($depen['id_dependencia']=='9')
@@ -1530,7 +1527,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                             }
                         }
 
-                        if($ruta_archivo){
+                        if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                             $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['contrato']);
                         }
                     }
@@ -1594,7 +1591,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                                 }
                             }
 
-                            if($ruta_archivo){
+                            if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                                 $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['codigo']);
                             }
                         }
@@ -1644,10 +1641,18 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
         $get_dependencias = $dependencias->get_dependencias();
         if ($this->request->getMethod() === 'post') {
             $post = $this->request->getPost();
-            if(isset($post['actualizar'])){
+            if(isset($post['actualizar']) && !isset($post['arrendar'])){
                 if ((($post['actualizar']) == '1') && ($post['contrato']) && ($post['num_consignacion'])&& ($post['estado'])){
                     $finicio = (isset($post['finicio']))?("'".$post['finicio']."'"):'null'; $ffin = (isset($post['ffin']))?("'".$post['ffin']."'"):'null';
                     $cliente ='';
+                    $codigo_inactivado = null;
+                    if($post['estado'] == 'cerrado'){
+                        $codigo_inactivado = isset($post['codigo_inactivado']) ? trim($post['codigo_inactivado']) : '';
+                        if(!$codigo_inactivado){
+                            $this->template->session_messages('error','Debe ingresar el codigo de inactivado para inactivar la consignacion.'); 
+                            return $this->response->redirect('consignacion_arriendo');
+                        }
+                    }
                     if(isset($post['inquilinos'])){
                         foreach($post['inquilinos'] as $inq){
                             $cliente = ($cliente)?($cliente.','.$inq):$inq;
@@ -1655,7 +1660,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                     }
                     $contrato_arriendo = $post['contrato_arriendo'];
                    
-                    $actualizar = $dependencias->actualizarexpediente($post['contrato'],$post['num_consignacion'],$finicio,$ffin,'13',$post['estado'],$cliente,$contrato_arriendo);
+                    $actualizar = $dependencias->actualizarexpediente($post['contrato'],$post['num_consignacion'],$finicio,$ffin,'13',$post['estado'],$cliente,$contrato_arriendo,$codigo_inactivado);
 
                     if(isset($actualizar) && $actualizar){
                         $this->template->add_messages('success','La consignación '.$post['num_consignacion'].' se actualizo con éxito.'); 
@@ -1667,13 +1672,8 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
             }
 
             $get_documentos = $dependencias->get_documentos();
-            if(isset($post['documentos']) && $post['contrato']){
-                $namedepen='';
-                foreach($get_dependencias as $depen){
-                    if($depen['id_dependencia']=='13')
-                        {$namedepen = $depen['nombre'];}
-                }    
-
+            if(isset($post['documentos']) && $post['contrato'] && !isset($post['arrendar'])){
+                $contrato_documentos = isset($post['contrato_documentos']) ? $post['contrato_documentos'] : $post['contrato'];
                 if(isset($post['eliminar_imagen']) && $post['eliminar_imagen']){
                     $delete_imagen = $dependencias->eliminar_imagen_arriendo($post['contrato'], $post['eliminar_imagen']);
                     if(isset($delete_imagen) && $delete_imagen){
@@ -1684,31 +1684,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                     return $this->response->redirect('arriendos');
                 }
 
-                if(isset($get_documentos) && $get_documentos){
-                    foreach($get_documentos as $docu){
-                        $ruta_archivo = '';
-                        $namearchivo = 'doc_'.$docu['id_documento'];
-                        $file = $this->request->getFile($namearchivo);
-                        $compl = (isset($post['comp_'.$docu['id_documento']]))?($post['comp_'.$docu['id_documento']]):'';
-
-                        if(isset($file) && $file){
-                            $fileExtension = $file->getClientExtension();
-                            if(isset($fileExtension) && $fileExtension){
-                                $ruta = $this->upload($file,$namedepen.'/'.$post['contrato']);
-                                if($ruta['errors'] == 'success'){
-                                    $ruta_archivo = $ruta['ruta'];
-                                }else{
-                                    $archivo_cargado = false;
-                                    $this->template->session_messages('error',$ruta['errors']); 
-                                }
-                            }
-                        }
-
-                        if($ruta_archivo){
-                            $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['contrato']);
-                        }
-                    }
-                }
+                $this->guardarDocumentosExpedientePost($dependencias, $get_dependencias, $get_documentos, $post, '13', $contrato_documentos);
                 $this->template->session_messages('success','La consignación fue actualizada.'); 
                 return $this->response->redirect('consignacion_arriendo');
             }
@@ -1727,13 +1703,33 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
             }
 
             if(isset($post['arrendar'])){
-                if ((($post['arrendar'])) && ($post['contrato']) && ($post['num_consignacion']) && ($post['estado']) && ($post['contrato_arriendo']) && ($post['inquilinos'])){
+                $contrato_arriendo = isset($post['contrato_arriendo']) ? trim($post['contrato_arriendo']) : '';
+                $inquilinos = isset($post['inquilinos']) ? array_values(array_filter((array) $post['inquilinos'], function($inq){
+                    return trim((string) $inq) !== '';
+                })) : [];
+
+                if(!$contrato_arriendo || !$inquilinos){
+                    $this->template->session_messages('error','Debe ingresar el contrato de arriendo y seleccionar al menos un arrendatario para arrendar.'); 
+                    return $this->response->redirect('consignacion_arriendo');
+                }
+
+                if ((($post['arrendar'])) && ($post['contrato']) && ($post['num_consignacion']) && ($post['estado'])){
                     $finicio = (isset($post['finicio']))?("'".$post['finicio']."'"):'null'; $ffin = (isset($post['ffin']))?("'".$post['ffin']."'"):'null';
                     $cliente ='';
-                    foreach($post['inquilinos'] as $inq){
+                    foreach($inquilinos as $inq){
                         $cliente = ($cliente)?($cliente.','.$inq):$inq;
                     }
-                    $actualizar = $dependencias->actualizarexpediente($post['contrato'],$post['num_consignacion'],$finicio,$ffin,'13','arrendado',$cliente,$post['contrato_arriendo']);
+                    $actualizar = $dependencias->actualizarexpediente($post['contrato'],$post['num_consignacion'],$finicio,$ffin,'13','arrendado',$cliente,$contrato_arriendo);
+                    if(isset($actualizar) && $actualizar && isset($post['documentos']) && $post['contrato']){
+                        $contrato_documentos = isset($post['contrato_documentos']) ? $post['contrato_documentos'] : $post['contrato'];
+                        $this->guardarDocumentosExpedientePost($dependencias, $get_dependencias, $get_documentos, $post, '13', $contrato_documentos);
+                    }
+
+                    if(isset($actualizar) && $actualizar){
+                        $this->template->session_messages('success','El contrato de arriendo '.$contrato_arriendo.' se actualizo con exito.'); 
+                    }else{
+                        $this->template->session_messages('error','Algo salio mal al tratar de actualizar el contrato de arriendo, por favor vuelva a intentarlo nuevamente.'); 
+                    }
 
                     if(isset($actualizar) && $actualizar){
                         $this->template->add_messages('success','El contrato de arriendo '.$post['contrato_arriendo'].' se actualizo con éxito.'); 
@@ -1741,7 +1737,11 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                         $this->template->add_messages('error','Algo salio mal al tratar de actualizar el contrato de arriendo, por favor vuelva a intentarlo nuevamente.'); 
                     }
                     
+                }else{
+                    $this->template->session_messages('error','Debe completar el formulario para poder arrendar.'); 
                 }
+
+                return $this->response->redirect('consignacion_arriendo');
             }
         }
 
@@ -1801,7 +1801,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                                 }
                             }
 
-                            if($ruta_archivo){
+                            if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                                 $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['num_consignacion']);
                             }
                         }
@@ -1813,20 +1813,17 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                         $files = '';
                     }
                     if(isset($files) && $files){ 
-                        
+                        $descripciones_imagenes = isset($post['descripcion_imagen']) ? $post['descripcion_imagen'] : [];
                         foreach($files["imagenes"] as $key => $item){
                             $token = bin2hex(openssl_random_pseudo_bytes(12));
                                 $ruta = $this->upload($item,$namedepen.'/'.$post['num_consignacion'].'/imagenes');
                                 if($ruta['errors'] == 'success'){
-                                    $archivos[] = $ruta;
+                                    $descripcion_imagen = is_array($descripciones_imagenes) ? trim($descripciones_imagenes[$key] ?? '') : trim($descripciones_imagenes);
+                                    $complemento_imagen = ($descripcion_imagen) ? ('imagenes*w*'.$descripcion_imagen) : 'imagenes';
+                                    $dependencias->agregardocumento('0',$complemento_imagen,$ruta['ruta'],$post['num_consignacion']);
                                 }else{
                                     $this->template->add_messages('info','El archivo no pude ser cargado.');
                                 }
-                        }
-                        if(isset($archivos) && $archivos){
-                            foreach($archivos as $files){
-                                $dependencias->agregardocumento('0',$complemento_imagen,$files['ruta'],$post['num_consignacion']);
-                            }
                         }
                     }
 
@@ -1859,6 +1856,25 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
         $this->template->active_sidebar('consignacion_arriendo');
         $this->template->title_page('Consignacion de arriendo');
         return $this->template->renderview('dependencias/consignacion_arriendo','1');
+    }
+
+    public function consignacion_arriendo_inactivas(){
+        if(!$this->template->get_session('usuario_pqrsd')){
+            return $this->response->redirect('login');
+        }
+
+        $this->template->add_data('titulo_tabla','Listado de consignaciones de arriendo inactivadas'); 
+
+        $dependencias = new DependenciaModel();
+        $dependencias->ensureCodigoInactivadoColumn();
+
+        $expedientes = $dependencias->expedientes_compra('13','cerrado');
+        $this->template->add_data('expedientes',$expedientes);  
+        $this->template->add_js('assets/js/expediente');
+
+        $this->template->active_sidebar('consignacion_arriendo_inactivas');
+        $this->template->title_page('Consignaciones de arriendo inactivadas');
+        return $this->template->renderview('dependencias/consignacion_arriendo_inactivas','1');
     }
 
     public function arriendos(){
@@ -1933,7 +1949,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                             }
                         }
 
-                        if($ruta_archivo){
+                        if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                             $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['contrato']);
                         }
                     }
@@ -1941,9 +1957,10 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
 
                 $files = $this->request->getFiles('imagenes');
                 if(isset($_FILES['imagenes']['name'][0]) && !empty($_FILES['imagenes']['name'][0]) && isset($files["imagenes"])){
-                    $descripcion_imagen = isset($post['descripcion_imagen']) ? trim($post['descripcion_imagen']) : '';
-                    $complemento_imagen = ($descripcion_imagen) ? ('imagenes*w*'.$descripcion_imagen) : 'imagenes';
-                    foreach($files["imagenes"] as $item){
+                    $descripciones_imagenes = isset($post['descripcion_imagen']) ? $post['descripcion_imagen'] : [];
+                    foreach($files["imagenes"] as $key => $item){
+                        $descripcion_imagen = is_array($descripciones_imagenes) ? trim($descripciones_imagenes[$key] ?? '') : trim($descripciones_imagenes);
+                        $complemento_imagen = ($descripcion_imagen) ? ('imagenes*w*'.$descripcion_imagen) : 'imagenes';
                         $ruta = $this->upload($item,$namedepen.'/'.$post['contrato'].'/imagenes');
                         if($ruta['errors'] == 'success'){
                             $dependencias->agregardocumento('0',$complemento_imagen,$ruta['ruta'],$post['contrato']);
@@ -2028,7 +2045,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                                 }
                             }
 
-                            if($ruta_archivo){
+                            if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
                                 $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$post['num_consignacion']);
                             }
                         }
@@ -2040,22 +2057,17 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                         $files = '';
                     }
                     if(isset($files) && $files){ 
-                        
+                        $descripciones_imagenes = isset($post['descripcion_imagen']) ? $post['descripcion_imagen'] : [];
                         foreach($files["imagenes"] as $key => $item){
                             $token = bin2hex(openssl_random_pseudo_bytes(12));
                                 $ruta = $this->upload($item,$namedepen.'/'.$post['num_consignacion'].'/imagenes');
                                 if($ruta['errors'] == 'success'){
-                                    $archivos[] = $ruta;
+                                    $descripcion_imagen = is_array($descripciones_imagenes) ? trim($descripciones_imagenes[$key] ?? '') : trim($descripciones_imagenes);
+                                    $complemento_imagen = ($descripcion_imagen) ? ('imagenes*w*'.$descripcion_imagen) : 'imagenes';
+                                    $dependencias->agregardocumento('0',$complemento_imagen,$ruta['ruta'],$post['num_consignacion']);
                                 }else{
                                     $this->template->add_messages('info','El archivo no pude ser cargado.');
                                 }
-                        }
-                        if(isset($archivos) && $archivos){
-                            $descripcion_imagen = isset($post['descripcion_imagen']) ? trim($post['descripcion_imagen']) : '';
-                            $complemento_imagen = ($descripcion_imagen) ? ('imagenes*w*'.$descripcion_imagen) : 'imagenes';
-                            foreach($archivos as $files){
-                                $dependencias->agregardocumento('0',$complemento_imagen,$files['ruta'],$post['num_consignacion']);
-                            }
                         }
                     }
 
@@ -2088,6 +2100,48 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
         $this->template->active_sidebar('arriendos');
         $this->template->title_page('Arriendos');
         return $this->template->renderview('dependencias/arriendos','1');
+    }
+
+    private function guardarDocumentosExpedientePost(DependenciaModel $dependencias, $get_dependencias, $get_documentos, $post, $id_dependencia, $num_contrato)
+    {
+        $archivo_cargado = true;
+        $namedepen = '';
+
+        if(isset($get_dependencias) && $get_dependencias){
+            foreach($get_dependencias as $depen){
+                if($depen['id_dependencia'] == $id_dependencia){
+                    $namedepen = $depen['nombre'];
+                }
+            }
+        }
+
+        if(isset($get_documentos) && $get_documentos){
+            foreach($get_documentos as $docu){
+                $ruta_archivo = '';
+                $namearchivo = 'doc_'.$docu['id_documento'];
+                $file = $this->request->getFile($namearchivo);
+                $compl = (isset($post['comp_'.$docu['id_documento']]))?($post['comp_'.$docu['id_documento']]):'';
+
+                if(isset($file) && $file){
+                    $fileExtension = $file->getClientExtension();
+                    if(isset($fileExtension) && $fileExtension){
+                        $ruta = $this->upload($file,$namedepen.'/'.$num_contrato);
+                        if($ruta['errors'] == 'success'){
+                            $ruta_archivo = $ruta['ruta'];
+                        }else{
+                            $archivo_cargado = false;
+                            $this->template->session_messages('error',$ruta['errors']); 
+                        }
+                    }
+                }
+
+                if($ruta_archivo || isset($post['comp_'.$docu['id_documento']])){
+                    $dependencias->agregardocumento($docu['id_documento'],$compl,$ruta_archivo,$num_contrato);
+                }
+            }
+        }
+
+        return $archivo_cargado;
     }
 }
 

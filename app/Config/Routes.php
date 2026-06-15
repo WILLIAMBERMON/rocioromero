@@ -68,6 +68,7 @@ $routes->add('/avaluo', 'Dependencia::avaluo');
 $routes->add('/arriendos', 'Dependencia::arriendos');
 $routes->add('/notificaciones', 'Dependencia::notificaciones');
 $routes->add('/consignacion_arriendo', 'Dependencia::consignacion_arriendo');
+$routes->add('/consignacion_arriendo_inactivas', 'Dependencia::consignacion_arriendo_inactivas');
 
 /*$routes->add('/radicar', 'index::radicar');
 $routes->add('/consultas', 'index::consultas');

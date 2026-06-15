@@ -21,7 +21,6 @@ class Users extends BaseController
         if($post = $this->request->getPost()){
             if($post['agregarusuario'] == '1'){
                 if(($post['tipo_documento']) && ($post['documento']) && ($post['nombres']) && ($post['apellidos']) && ($post['celular']) && ($post['email'])){
-                    $this->ldap->lookup_auth();
                     $token = bin2hex(openssl_random_pseudo_bytes(12));
                     $registro = $usermodel->registrarse($post['tipo_documento'],$post['documento'],$post['nombres'],$post['apellidos'],$post['celular'],$post['email'],'',$token);
                     if(isset($registro) && $registro){
@@ -40,7 +39,7 @@ class Users extends BaseController
 
             if($post['agregarusuario'] == '2'){
                 if(($post['tipo_documento']) && ($post['documento']) && ($post['nombres']) && ($post['apellidos']) && ($post['celular']) && ($post['email']) && $post['cambioclave']){
-                    $this->ldap->lookup_auth();$token = '';
+                    $token = '';
                     if($post['cambioclave'] == 'SI'){
                         $token = bin2hex(openssl_random_pseudo_bytes(12));
                     }

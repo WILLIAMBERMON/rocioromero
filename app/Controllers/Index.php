@@ -120,13 +120,19 @@ class Index extends BaseController
                         "tipo_usuario"  => "usuario",
                         "dependencia"  => "",
                     );
-                    $clave = str_replace(" ", "", $usuario[0]['clave']);
-                   
+                    $clave_valida = true;
+                    if(ENVIRONMENT == 'production'){
+                        $clave_valida = $this->validarClaveUsuario($post['password'], $usuario[0]['clave']);
+                    }
+
+                    if($clave_valida){
                         $nombres = $usuario[0]['nombres'].' '.$usuario[0]['apellidos'];
                         $this->template->set_session('usuario_pqrsd',$user);
                         $this->template->session_messages('success','Bienvenido nuevamente '.$nombres);
                         return $this->response->redirect('procesos');
-                   
+                    }else{
+                        $this->template->add_messages('error','La clave ingresada no es correcta.');
+                    }
                 }else{
                         $this->template->add_messages('error','El documento ingresado no se encuentra registrado.');
                 }
@@ -278,8 +284,7 @@ class Index extends BaseController
         if($post = $this->request->getPost()){
             if($post['registrarse'] == '1'){
                 if(($post['tipo_documento']) && ($post['documento']) && ($post['nombres']) && ($post['apellidos']) && ($post['celular']) && ($post['email']) && ($post['password']) && ($post['rpassword']) && (($post['password']) == ($post['rpassword']))){
-                    $this->ldap->lookup_auth();
-                    $clave = $this->ldap->encrypt_password($post['password']);
+                    $clave = $this->codificarClaveUsuario($post['password']);
                     $token = bin2hex(openssl_random_pseudo_bytes(12));
                     $indexmodel = new IndexModel();
                     $registro = $indexmodel->registrarse($post['tipo_documento'],$post['documento'],$post['nombres'],$post['apellidos'],$post['celular'],$post['email'],$clave,$token);
@@ -321,8 +326,7 @@ class Index extends BaseController
         if($post = $this->request->getPost()){
             if($post['registrarsew'] == '1'){
                 if((($post['password']) && ($post['rpassword']) && (($post['password']) == ($post['rpassword'])))){
-                    $this->ldap->lookup_auth();
-                    $clave = $this->ldap->encrypt_password($post['password']);
+                    $clave = $this->codificarClaveUsuario($post['password']);
                     $indexmodel = new IndexModel();
                     $registro = $indexmodel->updateregistro($clave,$llave);
                     if(isset($registro) && $registro){

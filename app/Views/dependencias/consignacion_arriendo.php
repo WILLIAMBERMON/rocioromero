@@ -28,16 +28,17 @@
                   <td style="text-align:center;" ><?php echo ($prop['estado']=='abierto')?'Activo':'Inactivo';?></td>
                   
                   <td style="text-align:center;" >
-                    <button class="btn btn-success regular-button botones" onclick="buscar_documentos(<?php echo "'".$prop['dependencia']."','".$prop['codigo']."','','agregardoc',true";?>)" title="Archivos cargados"> <i class="fa fa-fw fa-file-pdf"></i></button>
+                    <button class="btn btn-success regular-button botones" onclick="buscar_documentos(<?php echo "'8','".$prop['codigo']."','','agregardoc',true";?>)" title="Archivos cargados"> <i class="fa fa-fw fa-file-pdf"></i></button>
                     <?php if($prop['dependencia'] == '8'): ?>
                     <button class="btn btn-primary regular-button botones" onclick="buscar_documentos(<?php echo "'".$prop['dependencia']."','".$prop['num_contrato']."','imagenes'";?>)" title="Imagenes cargadas"> <i class="fa fa-fw fa-file-image"></i></button>
                     <?php endif; ?>
                   </td>
                   <td style="text-align:center;" >
                   
-                  <a type= "button" class="btn btn-flat btn-primary regular-button botones" href="#modal-editar<?php echo $prop['num_contrato'];?>" title="Editar Expediente" data-toggle="modal"><i class="fa-sharp fa-regular fa-pencil" ></i></a>
+                  <a type= "button" class="btn btn-flat btn-primary regular-button botones" href="#modal-editar<?php echo $prop['num_contrato'];?>" onclick="buscar_documentos(<?php echo "'8','".$prop['codigo']."','','agregardoc_edit".$prop['num_contrato']."'";?>)" title="Editar Expediente" data-toggle="modal"><i class="fa-sharp fa-regular fa-pencil" ></i></a>
                   <a type= "button" class="btn btn-flat btn-danger " href="#modal-eliminar<?php echo $prop['num_contrato'];?>" title="Eliminar Expediente" data-toggle="modal"><i class="fa-sharp fa-regular fa-times"></i></a>  
-                  <?php echo form_open(base_url($tipo_expediente), ['class' => 'form-horizontal', 'id' => 'form_dependencia', 'role' => 'form'],['actualizar'=>'1','contrato'=>$prop['num_contrato']]);?>
+                  <?php echo form_open_multipart(base_url($tipo_expediente), ['class' => 'form-horizontal form-consignacion-arriendo-edit', 'id' => 'form_dependencia'.$prop['num_contrato'], 'role' => 'form', 'data-contrato' => $prop['num_contrato']],['actualizar'=>'1','documentos'=>'1','contrato'=>$prop['num_contrato'],'contrato_documentos'=>$prop['codigo']]);?>
+                  <input type="hidden" id="inactivacion_confirmada<?php echo $prop['num_contrato'];?>" value="0">
                     
                     <div class="modal fade" id="modal-editar<?php echo $prop['num_contrato'];?>">
                         <div class="modal-dialog modal-lg">
@@ -76,7 +77,7 @@
                                   <div class="col-md-6">
                                     <div class="form-group">
                                       <label>Estado del expediente</label>
-                                      <select name="estado" id="estado" required class="form-control" required placeholder="Estado del expediente">
+                                      <select name="estado" id="estado<?php echo $prop['num_contrato'];?>" onchange="validarEstadoInactivo('<?php echo $prop['num_contrato'];?>')" required class="form-control" required placeholder="Estado del expediente">
                                       <option value='' selected>Seleccione...</option>
                                       <option <?php echo ( 'abierto' == $prop['estado'])?('selected'):''; ?> value="abierto">Activo</option>
                                       <option <?php echo ( 'cerrado' == $prop['estado'])?('selected'):''; ?> value="cerrado">Inactivo</option>
@@ -106,6 +107,9 @@
                                     </select><br>
                                     </div>
                                   </div>
+                                  <div class="col-md-12">
+                                    <div id="agregardoc_edit<?php echo $prop['num_contrato'];?>"></div>
+                                  </div>
                                 </div>
                           </div>
                           <div class="modal-footer">
@@ -118,6 +122,31 @@
                       </div>
                       <!-- /.modal-dialog -->
                     </div>
+                    <div class="modal fade" id="modal-inactivar<?php echo $prop['num_contrato'];?>" data-backdrop="static" data-keyboard="false">
+                        <div class="modal-dialog">
+                          <div class="modal-content bg-info">
+                            <div class="modal-header">
+                              <h4 class="modal-title text-white">Confirmar inactivacion</h4>
+                              <button type="button" class="close" onclick="cancelarInactivacion('<?php echo $prop['num_contrato'];?>')" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                              </button>
+                            </div>
+                            <div class="modal-body">
+                              <p style="text-align:left">
+                                Esta seguro de inactivar la consignacion <?php echo $prop['codigo'];?>?
+                              </p>
+                              <div class="form-group">
+                                <label>Codigo de inactivado</label>
+                                <input type="text" name="codigo_inactivado" id="codigo_inactivado<?php echo $prop['num_contrato'];?>" class="form-control" value="<?php echo isset($prop['codigo_inactivado']) ? $prop['codigo_inactivado'] : ''; ?>" placeholder="Codigo de inactivado">
+                              </div>
+                            </div>
+                            <div class="modal-footer justify-content-between">
+                              <button type="button" class="btn btn-outline-light" onclick="cancelarInactivacion('<?php echo $prop['num_contrato'];?>')">Cancelar</button>
+                              <button type="button" class="btn btn-danger" onclick="confirmarInactivacion('<?php echo $prop['num_contrato'];?>')">Confirmar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
             <?php echo form_close();?>
 
             
@@ -165,7 +194,9 @@
               </table> 
               
             <?php endif; ?>  
-            <br><hr><button type="button" onclick="add_expedientew()" class="btn btn-flat btn-primary float-right"><i class="fa fa-fw fa-plus"></i> <?php echo ($titulo_boton) ? ($titulo_boton):'Agregar'; ?></button><br>
+            <br><hr>
+            <a href="<?php echo base_url('consignacion_arriendo_inactivas'); ?>" class="btn btn-flat btn-warning float-left"><i class="fa fa-fw fa-archive"></i> Inactivadas</a>
+            <button type="button" onclick="add_expedientew()" class="btn btn-flat btn-primary float-right"><i class="fa fa-fw fa-plus"></i> <?php echo ($titulo_boton) ? ($titulo_boton):'Agregar'; ?></button><br>
             
             <?php echo form_open_multipart(base_url($tiporeal), ['class' => 'form-horizontal', 'id' => 'form_dependencia', 'role' => 'form'],['documentos'=>'1']);?>
             <div  class="col-md-12" id="agregardoc"></div>
@@ -174,7 +205,92 @@
     
     <!-- /.card-body -->
   </div>
-</div> 
+</div>
+<script>
+function validarEstadoInactivo(numContrato){
+    var estado = $('#estado'+numContrato).val();
+    if(estado == 'cerrado'){
+        $('#inactivacion_confirmada'+numContrato).val('0');
+        $('#modal-inactivar'+numContrato).modal('show');
+    }else{
+        $('#codigo_inactivado'+numContrato).val('');
+        $('#inactivacion_confirmada'+numContrato).val('0');
+    }
+}
+
+function cancelarInactivacion(numContrato){
+    $('#estado'+numContrato).val('abierto');
+    $('#codigo_inactivado'+numContrato).val('');
+    $('#inactivacion_confirmada'+numContrato).val('0');
+    $('#modal-inactivar'+numContrato).modal('hide');
+}
+
+function confirmarInactivacion(numContrato){
+    var codigo = $('#codigo_inactivado'+numContrato).val().trim();
+    if(!codigo){
+        if(typeof toastr !== 'undefined'){
+            toastr.error('Debe ingresar el codigo de inactivado.');
+        }else{
+            alert('Debe ingresar el codigo de inactivado.');
+        }
+        return;
+    }
+
+    $('#inactivacion_confirmada'+numContrato).val('1');
+    $('#modal-inactivar'+numContrato).modal('hide');
+}
+
+$(document).on('click', '.form-consignacion-arriendo-edit button[type="submit"]', function(){
+    $(this).closest('form').data('accion', $(this).attr('name'));
+});
+
+$(document).on('submit', '.form-consignacion-arriendo-edit', function(event){
+    var numContrato = $(this).data('contrato');
+    var estado = $('#estado'+numContrato).val();
+    var codigo = $('#codigo_inactivado'+numContrato).val().trim();
+    var confirmado = $('#inactivacion_confirmada'+numContrato).val();
+    var accion = $(this).data('accion');
+
+    if(!accion && event.originalEvent && event.originalEvent.submitter){
+        accion = $(event.originalEvent.submitter).attr('name');
+    }
+
+    if(accion == 'arrendar'){
+        var contratoArriendo = $.trim($(this).find('[name="contrato_arriendo"]').val());
+        var inquilinos = $(this).find('[name="inquilinos[]"]').val() || [];
+        inquilinos = $.grep(inquilinos, function(valor){
+            return $.trim(valor) !== '';
+        });
+
+        if(!contratoArriendo){
+            event.preventDefault();
+            if(typeof toastr !== 'undefined'){
+                toastr.error('Debe ingresar el contrato de arriendo.');
+            }else{
+                alert('Debe ingresar el contrato de arriendo.');
+            }
+            $(this).find('[name="contrato_arriendo"]').focus();
+            return;
+        }
+
+        if(inquilinos.length === 0){
+            event.preventDefault();
+            if(typeof toastr !== 'undefined'){
+                toastr.error('Debe seleccionar al menos un arrendatario.');
+            }else{
+                alert('Debe seleccionar al menos un arrendatario.');
+            }
+            $(this).find('[name="inquilinos[]"]').focus();
+            return;
+        }
+    }
+
+    if(accion != 'arrendar' && estado == 'cerrado' && (!codigo || confirmado != '1')){
+        event.preventDefault();
+        $('#modal-inactivar'+numContrato).modal('show');
+    }
+});
+</script>
 
 <div class="modal fade modal-success" id="modal-buscarpersona">
       <div class="modal-dialog">
