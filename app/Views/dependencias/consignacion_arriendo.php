@@ -35,7 +35,7 @@
                   </td>
                   <td style="text-align:center;" >
                   
-                  <a type= "button" class="btn btn-flat btn-primary regular-button botones" href="#modal-editar<?php echo $prop['num_contrato'];?>" onclick="buscar_documentos(<?php echo "'8','".$prop['codigo']."','','agregardoc_edit".$prop['num_contrato']."'";?>)" title="Editar Expediente" data-toggle="modal"><i class="fa-sharp fa-regular fa-pencil" ></i></a>
+                  <a type= "button" class="btn btn-flat btn-primary regular-button botones" href="javascript:void(0)" data-target="#modal-editar<?php echo $prop['num_contrato'];?>" onclick="buscar_documentos(<?php echo "'8','".$prop['codigo']."','','agregardoc_edit".$prop['num_contrato']."'";?>)" title="Editar Expediente" data-toggle="modal"><i class="fa-sharp fa-regular fa-pencil" ></i></a>
                   <a type= "button" class="btn btn-flat btn-danger " href="#modal-eliminar<?php echo $prop['num_contrato'];?>" title="Eliminar Expediente" data-toggle="modal"><i class="fa-sharp fa-regular fa-times"></i></a>  
                   <?php echo form_open_multipart(base_url($tipo_expediente), ['class' => 'form-horizontal form-consignacion-arriendo-edit', 'id' => 'form_dependencia'.$prop['num_contrato'], 'role' => 'form', 'data-contrato' => $prop['num_contrato']],['actualizar'=>'1','documentos'=>'1','contrato'=>$prop['num_contrato'],'contrato_documentos'=>$prop['codigo']]);?>
                   <input type="hidden" id="inactivacion_confirmada<?php echo $prop['num_contrato'];?>" value="0">

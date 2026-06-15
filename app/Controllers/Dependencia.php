@@ -519,7 +519,7 @@ class Dependencia extends BaseController
 </div>';
 $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" name="imagenes[]" type="file"  multiple data-show-upload="false" data-show-caption="true" data-msg-placeholder="Seleccionar Archivos...">'):'';
                         }else{
-                            $tabla = '<hr><br><b>Documentos cargados: </b><br><table class="table table-bordered table-striped table-dark">
+                            $tabla = '<hr><br><b>Documentos cargados: </b><br><table class="table table-bordered table-striped">
                             <thead>
                             <tr>
                                 <th style="text-align:center; width: 20%">DOCUMENTO</th>
@@ -545,7 +545,7 @@ $tabla .= ($tipo == '8')?('<br> <label>Imagenes</label><br><input id="input-24" 
                         
                     }else{
                         if($tipodoc != 'imagenes'){
-                        $tabla = '<table class="table table-bordered table-striped table-dark">
+                        $tabla = '<table class="table table-bordered table-striped">
                         <thead>
                         <tr>
                             <th style="text-align:center; width: 40%">DOCUMENTO</th>

@@ -1,23 +1,61 @@
 function buscar_documentos(tipo,num_contrato='',tipodoc='',activadoc = 'agregardoc',boton = false){
           
-$('#'+activadoc).html('');
+if(activadoc.indexOf('agregardoc_edit') === 0){
+    var contratoModal = activadoc.replace('agregardoc_edit', '');
+    var modalEditar = $('#modal-editar'+contratoModal);
+    var formEditar = modalEditar.closest('form');
+    if(formEditar.length && !formEditar.parent().is('body')){
+        $('body').append(formEditar);
+    }
+}
+
+var contenedor = $('#'+activadoc);
+contenedor.html('<div class="alert alert-info">Cargando documentos...</div>');
 var host = window.location.protocol + "//" + window.location.host + "/";
 $.ajax({
     url: host+'buscardocumentos',
     type: "POST",
     cache: false,
+    timeout: 30000,
     data:{tipo: tipo,num_contrato:num_contrato,tipodoc:tipodoc},
     success: function(data){
-        var info = jQuery.parseJSON(data);
+        var info = {};
+        try{
+            info = (typeof data === 'string') ? jQuery.parseJSON(data) : data;
+        }catch(e){
+            contenedor.html('');
+            toastr.error('No se pudo cargar el listado de documentos.');
+            return;
+        }
         if(info.carga){
             var mostrarGuardar = boton || tipodoc == 'imagenes';
             var cerrar = (activadoc == 'agregardoc') ? ('<br><button type="button" onclick="$(`#'+activadoc+'`).hide()" class="btn btn-flat btn-primary float-'+((mostrarGuardar)?'left':'right')+'"><i class="fa fa-fw fa-times"></i> Cerrar </button>'+((mostrarGuardar)?'<button type="submit" name="contrato" value="'+num_contrato+'" class="btn btn-flat btn-success float-right"><i class="fa fa-fw fa-save"></i> Guardar </button><br>':'<br>')):'';
-            $('#'+activadoc).html(info.tabla+cerrar);
-            $('#'+activadoc).show();
-            var urls = info.ruta_archivos;
-            console.log(urls);
+            contenedor.html(info.tabla+cerrar);
+            contenedor.show();
+
+            if(activadoc.indexOf('agregardoc_edit') === 0){
+                contenedor.find('table').addClass('table-dark');
+            }
+
+            contenedor.find('table').each(function(){
+                if(!$(this).parent().hasClass('table-responsive')){
+                    $(this).wrap('<div class="table-responsive"></div>');
+                }
+            });
+
+            var urls = info.ruta_archivos || '';
             var deleteurl = host+'file_delete';
             var extensionesPermitidas = (tipodoc == 'imagenes') ? ["jpg", "jpeg", "jpe", "jfif", "png", "gif", "webp", "bmp"] : ["jpg", "jpeg", "jpe", "jfif", "png", "gif", "webp", "bmp","pdf","doc","docx","ppt","pptx","xls","xlsx"];
+            var inputArchivo = contenedor.find('input[id="input-24"]');
+
+            if(inputArchivo.length === 0){
+                return;
+            }
+
+            if(inputArchivo.data('fileinput')){
+                inputArchivo.fileinput('destroy');
+            }
+
             if(urls.length > 0){
                 var urlcaption = [];
                 var contador = 1;
@@ -33,7 +71,7 @@ $.ajax({
                         idurl = idurl.replaceAll('=','__-w-__');
                         
                         if((extension == 'jpg')||(extension == 'png')||(extension == 'gif')||(extension == 'jpeg')){
-                            objeto = {
+                            var objeto = {
                                 "caption": "Archivo N° "+contador,
                                 "description": 'Archivo N° '+contador,
                                 "url": deleteurl+'/'+idurl,
@@ -42,7 +80,7 @@ $.ajax({
                                 
                             }
                         }else{
-                            objeto = {
+                            var objeto = {
                                 "type": extension,
                                 "caption": "Archivo N° "+contador,
                                 "description": 'Archivo N° '+contador,
@@ -58,7 +96,7 @@ $.ajax({
                     }
                 });
                 
-                $("#input-24").fileinput({
+                inputArchivo.fileinput({
                     language: "es",
                     initialPreview: urlsArray,
                     initialPreviewAsData: true,
@@ -72,9 +110,6 @@ $.ajax({
                 }).on('filebeforedelete', function(event, key, data) {
                     var aborted = !window.confirm('¿Esta seguro que desea borrar este archivo?');
                     if (aborted) {
-                        console.log(data);
-                        console.log(event);
-                        console.log(key);
                         var index =  key-1;
                         $('#thumb-input-24-init-'+index).show();
                        
@@ -83,9 +118,6 @@ $.ajax({
                         }, 2000);
                         
                     }else{
-                        console.log(data);
-                        console.log(event);
-                        console.log(key);
                         var index =  key-1;
                         $('#thumb-input-24-init-'+index).hide();
                         setTimeout(function(){
@@ -96,7 +128,7 @@ $.ajax({
                     return aborted;
                 });
                 }else{
-                    $("#input-24").fileinput({
+                    inputArchivo.fileinput({
                         language: "es",
                         allowedFileExtensions: extensionesPermitidas,
                           initialPreviewAsData: true,
@@ -114,8 +146,13 @@ $.ajax({
                 maxFileSize: 4800,
             });*/
         }else{
+            contenedor.html('');
             toastr.error('No se encontro documentos con la dependencia seleccionada.');
         }
+    },
+    error: function(){
+        contenedor.html('');
+        toastr.error('No se pudo conectar con el servidor para cargar los documentos.');
     }
     });
 
@@ -127,7 +164,7 @@ function textoSeguro(valor){
 
 function renderizarDescripcionesImagenes(input){
     var archivos = input.files || [];
-    var contenedor = $('#descripciones-imagenes');
+    var contenedor = $(input).closest('form').find('[id="descripciones-imagenes"]').first();
     contenedor.html('');
 
     if(archivos.length === 0){
@@ -145,7 +182,7 @@ function renderizarDescripcionesImagenes(input){
     });
 }
 
-$(document).on('change', '#input-24', function(){
+$(document).on('change', 'input[name="imagenes[]"]', function(){
     renderizarDescripcionesImagenes(this);
 });
 
